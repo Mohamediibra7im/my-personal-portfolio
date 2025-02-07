@@ -6,7 +6,7 @@ const projects = [
     name: "E-commerce Platform",
     description:
       "A full-stack e-commerce platform built with React and Node.js, featuring user authentication, product catalog, shopping cart, and payment integration.",
-    image: "/placeholder.svg?height=400&width=600&text=E-commerce+Platform",
+    image: "../public/placeholder.svg",
     demoLink: "https://demo.example.com/ecommerce",
     githubLink: "https://github.com/yourusername/ecommerce-platform",
     technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
@@ -15,7 +15,7 @@ const projects = [
     name: "Weather Application",
     description:
       "A responsive weather application using React and OpenWeatherMap API. It provides real-time weather information, forecasts, and location-based services.",
-    image: "/placeholder.svg?height=400&width=600&text=Weather+App",
+    image: "../public/placeholder.svg",
     demoLink: "https://demo.example.com/weather-app",
     githubLink: "https://github.com/yourusername/weather-app",
     technologies: ["React", "OpenWeatherMap API", "Geolocation API", "Tailwind CSS"],
@@ -24,7 +24,7 @@ const projects = [
     name: "Task Management System",
     description:
       "A comprehensive task management system with features like task creation, assignment, progress tracking, and team collaboration tools.",
-    image: "/placeholder.svg?height=400&width=600&text=Task+Management",
+    image: "../public/placeholder.svg",
     demoLink: "https://demo.example.com/task-management",
     githubLink: "https://github.com/yourusername/task-management",
     technologies: ["Vue.js", "Firebase", "Vuex", "Element UI"],
@@ -33,7 +33,7 @@ const projects = [
     name: "Todo List Application",
     description:
       "A feature-rich Todo list application built with React and TypeScript. Includes task prioritization, due dates, and local storage persistence.",
-    image: "/placeholder.svg?height=400&width=600&text=Todo+List+App",
+    image: "../public/placeholder.svg",
     demoLink: "https://demo.example.com/todo-list",
     githubLink: "https://github.com/yourusername/todo-list-app",
     technologies: ["React", "TypeScript", "LocalStorage API", "Tailwind CSS"],
