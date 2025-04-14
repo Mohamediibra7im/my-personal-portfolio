@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
+import { SiCodeforces, SiLeetcode,  } from "react-icons/si";
 
 export default function Hero() {
   return (
@@ -44,13 +45,7 @@ export default function Hero() {
               className="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-110"
               title="Codeforces"
             >
-              <Image
-              width={22}
-              height={22}
-              src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/48/external-codeforces-programming-competitions-and-contests-programming-community-logo-regular-tal-revivo.png"
-              alt="Codeforces"  
-              className="h-6 w-6"
-              />
+              <SiCodeforces className="h-6 w-6" />
             </a>
             <a
               href="https://leetcode.com/u/mid0riya"
@@ -59,13 +54,7 @@ export default function Hero() {
               className="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-110"
               title="LeetCode"
             >
-              <Image
-              width={20}
-              height={20}
-              src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/48/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-regular-tal-revivo.png"
-              alt="LeetCode"
-              className="h-6 w-6"
-              />
+              <SiLeetcode className="h-6 w-6" />
             </a>
             <a
               href="https://atcoder.jp/users/Midoriya_Izuku"
