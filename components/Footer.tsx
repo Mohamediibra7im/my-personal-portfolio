@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="text-center">
           <div className="flex justify-center space-x-6 mt-6">
             <a
-              href="https://github.com/midoriya-2-0"
+              href="https://github.com/Mohamediibra7im"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900"
@@ -16,7 +16,7 @@ export default function Footer() {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/mohammed-ibra7im"
+              href="https://www.linkedin.com/in/mohammed-ibra7im"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900"

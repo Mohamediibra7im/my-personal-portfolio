@@ -1,29 +1,37 @@
-import { Code, Database, Globe, Server, PenToolIcon as Tool, Users } from "lucide-react"
+import { Code, Puzzle, Database, Globe, Server, PenToolIcon as Tool, Users } from "lucide-react"
 
 const skillCategories = [
   {
     title: "Programming Languages",
     icon: Code,
-    skills: ["C", "C++", "C#", "LINQ", "Python", "Java", "OOP"],
+    skills: ["C", "C++", "C#", "LINQ", "Python", "Java", "OOP", "Go", "SQL"],
   },
   {
-    title: "Web Development",
+    title: "Core Skills",
+    icon: Puzzle,
+    skills: ["Algorithms", "Data Structures", "OOP", "Problem Solving", "Competitive Programming"],
+  },
+  {
+    title: "Frontend Development",
     icon: Globe,
     skills: [
       "HTML",
       "CSS",
       "JavaScript",
       "TypeScript",
-      "TailwindCSS",
+      "Tailwind CSS",
+      "Bootstrap",
       "SASS",
       "React",
-      "Django",
-      "RESTful APIs",
-      ".NET",
     ],
   },
   {
-    title: "Databases",
+    title: "Backend Development",
+    icon: Server,
+    skills: ["ASP.NET Core", "Django", "Flask", "RESTful APIs"],
+  },
+  {
+    title: "Databases Technologies:",
     icon: Database,
     skills: ["MySQL", "PostgreSQL", "MS SQL Server"],
   },
@@ -38,17 +46,17 @@ const skillCategories = [
     skills: [
       "Communication",
       "Teamwork",
-      "Problem-Solving",
       "Time Management",
       "Leadership",
       "Critical Thinking",
       "Creativity",
+      "Adaptability",
+      "Self-Motivation",
+      "Conflict Resolution",
+      "Empathy",
+      "Active Listening",
+      "Negotiation",
     ],
-  },
-  {
-    title: "Backend & DevOps",
-    icon: Server,
-    skills: ["Node.js", "Express.js", "Docker", "CI/CD", "AWS", "Heroku"],
   },
 ]
 

@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="order-2 md:order-1">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Mohammed Ibrahim <span className="text-yellow-400">👋</span>
+            Mohamed Ibrahim <span className="text-yellow-400">👋</span>
           </h1>
           <div className="mb-6">
             <p className="text-xl text-gray-600">
@@ -17,7 +17,7 @@ export default function Hero() {
           </div>
           <div className="flex gap-4 mb-8">
             <a
-              href="https://github.com/midoriya-2-0"
+              href="https://github.com/Mohamediibra7im"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900"
@@ -26,7 +26,7 @@ export default function Hero() {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/mohammed-ibra7im"
+              href="https://www.linkedin.com/in/mohammed-ibra7im/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900"
@@ -46,7 +46,7 @@ export default function Hero() {
         <div className="order-1 md:order-2 relative">
           <div className="w-80 h-80 mx-auto overflow-hidden rounded-full">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ME.jpg-T0yOHS4Ic5h5qpnBjyqtMRlJhogZQ5.jpeg"
+              src="https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFM720fbbzwX8O5q2kPK0pYDfbroUj1CilQWIvT"
               alt="Mohammed Ibrahim"
               width={400}
               height={400}

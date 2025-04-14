@@ -30,17 +30,6 @@ export default function About() {
 
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center gap-12">
-            {/* Remove this block
-            <div className="relative aspect-[4/5] w-full max-w-md mx-auto">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ME.jpg-T0yOHS4Ic5h5qpnBjyqtMRlJhogZQ5.jpeg"
-                alt="Mohammed Ibrahim"
-                fill
-                className="object-cover rounded-2xl"
-              />
-            </div>
-            */}
-
             <div className="space-y-8 text-center">
               <div className="grid grid-cols-3 gap-4">
                 {stats.map((stat) => (
@@ -65,10 +54,15 @@ export default function About() {
                 efficient and impactful solutions.
               </p>
 
-              <button className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors">
+                <a
+                href="https://drive.google.com/file/d/1HyKzZwqvfWgyLHMubHvLDQfktLrlwnEa/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors"
+                >
                 Download CV
                 <Download className="ml-2 h-5 w-5" />
-              </button>
+                </a>
             </div>
           </div>
         </div>

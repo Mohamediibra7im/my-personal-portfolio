@@ -6,12 +6,6 @@ export default function Education() {
       year: "September 2023 - Present",
       location: "Cairo, Egypt",
     },
-    {
-      degree: "High School",
-      school: "El Emam Ali Official Language School",
-      year: "2009 - 2023",
-      location: "Giza, Egypt",
-    },
   ]
 
   return (
