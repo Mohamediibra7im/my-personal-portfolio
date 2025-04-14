@@ -65,7 +65,7 @@ const certificates = [
     link: "https://drive.google.com/file/d/1cqkL_J2AmLZLrVs_2wSsy5QG-h2MWN2p/view?usp=sharing",
   },
   {
-    name: "Summer Training",
+    name: "Full Stack Summer Training",
     issuer: "Information Technology Institute (ITI)",
     year: "2024",
     description: "Completed summer training program focused on Full Stack Web Development with django",

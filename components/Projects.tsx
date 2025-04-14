@@ -89,7 +89,7 @@ export default function Projects() {
               <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gray-600 transition-colors">
                 {project.name}
               </h3>
-              <p className="text-gray-600 mb-4 line-clamp-3">{project.description}</p>
+              <p className="text-gray-600 mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, i) => (
                 <span key={i} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
