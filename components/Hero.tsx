@@ -15,12 +15,12 @@ export default function Hero() {
               <span className="text-lg text-gray-600 sm:ml-0"> & Competitive Programmer</span>
             </p>
           </div>
-          <div className="flex gap-4 mb-8">
+            <div className="flex gap-4 mb-8">
             <a
               href="https://github.com/Mohamediibra7im"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900"
+              className="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-110"
               title="GitHub"
             >
               <Github className="h-6 w-6" />
@@ -29,13 +29,58 @@ export default function Hero() {
               href="https://www.linkedin.com/in/mohammed-ibra7im/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900"
+              className="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-110"
               title="LinkedIn"
             >
               <Linkedin className="h-6 w-6" />
             </a>
-            <a href="mailto:mohammed.iibrahim.omar@gmail.com" className="text-gray-600 hover:text-gray-900" title="Email">
+            <a href="mailto:mohammed.iibrahim.omar@gmail.com" className="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-110" title="Email">
               <Mail className="h-6 w-6" />
+            </a>
+            <a
+              href="https://codeforces.com/profile/MIDORIYA_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-110"
+              title="Codeforces"
+            >
+              <Image
+              width={22}
+              height={22}
+              src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/48/external-codeforces-programming-competitions-and-contests-programming-community-logo-regular-tal-revivo.png"
+              alt="Codeforces"  
+              className="h-6 w-6"
+              />
+            </a>
+            <a
+              href="https://leetcode.com/u/mid0riya"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-110"
+              title="LeetCode"
+            >
+              <Image
+              width={20}
+              height={20}
+              src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/48/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-regular-tal-revivo.png"
+              alt="LeetCode"
+              className="h-6 w-6"
+              />
+            </a>
+            <a
+              href="https://atcoder.jp/users/Midoriya_Izuku"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900 transition-transform transform hover:scale-110"
+              title="AtCoder"
+            >
+              <Image
+              width={24}
+              height={24}
+              src="https://img.atcoder.jp/assets/top/img/logo_bk.svg"
+              alt="AtCoder"
+              className="h-7 w-7"
+              />
             </a>
           </div>
           <a href="#contact" className="inline-flex items-center px-4 py-2 bg-gray-900 text-white hover:bg-gray-800 rounded-full">
