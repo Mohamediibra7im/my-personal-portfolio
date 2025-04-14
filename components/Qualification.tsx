@@ -7,34 +7,9 @@ const educationList = [
     year: "September 2023 - Present",
     location: "Cairo, Egypt",
   },
-  {
-    degree: "High School",
-    school: "El Emam Ali Official Language School",
-    year: "2009 - 2023",
-    location: "Giza, Egypt",
-  },
 ]
 
 const experienceList = [
-  {
-    title: "Head of Researchers",
-    company: "Triple-S Cairo branch",
-    period: "November 2023 - Present",
-    location: "Cairo, Egypt",
-    description: [
-      "Leading and managing the research team, which includes hiring, mentoring, and evaluating researchers.",
-      "Managing the resources allocated to research, including budgets, equipment, and facilities.",
-    ],
-  },
-  {
-    title: "Academic Coordinator",
-    company: "Summarize Team",
-    period: "January 2024 - October 2024",
-    location: "Cairo, Egypt",
-    description: [
-      "Advising students on academic matters, including course selection, academic performance, and career guidance.",
-    ],
-  },
   {
     title: "Vice President & Head of Technical Committee",
     company: "HNU-FCSIT ICPC Community",
@@ -47,43 +22,54 @@ const experienceList = [
     ],
   },
   {
-    title: "Trainee - Summer Training",
-    company: "Information Technology Institute (ITI)",
-    period: "January 2024 - October 2024",
-    location: "Cairo, Egypt",
-    description: [
-      "Participated in full stack development projects using Python and its frameworks.",
-      "Developed user interfaces and server-side logic during the training.",
-      "Gained practical experience through mentorship.",
-    ],
-  },
-  {
-    title: "Trainee - Full Stack Development",
+    title: "Trainee - Full Stack Development with .NET",
     company: "Digital Egypt Pioneers Initiative (DEPI)",
     period: "November 2024 - Present",
     location: "Hybrid",
     description: [
-      "Rooted in .NET technologies, the profile showcases a solid foundation for developing data-driven applications. With expertise in C#, HTML5, JavaScript, CSS3, and .NET CoreWeb API, the candidate is equipped to deliver full-stack solutions across scalable web services and applications",
+      "Developing with .NET technologies and building data-driven applications",
+      "Working with C#, HTML5, JavaScript, CSS3, and .NET Core Web API",
     ],
   },
   {
-    title: "Trainee - Level 2 Problem Solving Training",
-    company: "Coach Academy",
-    period: "July 2024 - October 2024",
-    location: "Hybrid",
-    description: [
-      "Completed training focused on strong problem-solving skills.",
-      "Learned to analyze complex challenges and apply logical reasoning.",
-    ],
-  },
-  {
-    title: "Trainee - Competitive Programming Internship",
+    title: "Trainee - Competitive Programming (Intern)",
     company: "IEEE Delta Academy",
-    period: "September 2024 - Present",
+    period: "November 2024 - February 2025",
     location: "Remote",
     description: [
-      "Engaged in daily coding challenges and algorithm development.",
-      "Participated in team-based projects to enhance problem-solving skills.",
+      "Participating in competitive programming training sessions and contests",
+      "Learning algorithms and data structures to solve complex problems efficiently",
+      "Collaborating with peers to enhance problem-solving skills and coding techniques",
+    ],
+  },
+  {
+    title: "Academic Coordinator",
+    company: "Summarize Team",
+    period: "January 2024 - February 2025",
+    location: "Cairo, Egypt",
+    description: [
+      "Advising students on academic matters, including course selection, academic performance, and career guidance.",
+    ],
+  },
+  {
+    title: "Trainee - Full Stack Development with Django",
+    company: "Information Technology Institute (ITI)",
+    period: "November 2024 - September 2024",
+    location: "Remote",
+    description: [
+      "Developing with Django and building data-driven applications",
+      "Working with Python, HTML5, JavaScript, CSS3, and Django REST Framework",
+      "Gaining experience in full-stack development and web application design",
+    ],
+  },
+  {
+    title: "Head of Researchers",
+    company: "Triple-S Cairo branch",
+    period: "November 2023 - February 2024",
+    location: "Cairo, Egypt",
+    description: [
+      "Leading and managing the research team, which includes hiring, mentoring, and evaluating researchers.",
+      "Managing the resources allocated to research, including budgets, equipment, and facilities.",
     ],
   },
 ]

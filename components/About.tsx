@@ -1,4 +1,4 @@
-import { Download, Briefcase, FolderIcon as FolderDone, Headphones } from "lucide-react"
+import { ExternalLink, Briefcase, FolderIcon as FolderDone, Headphones } from "lucide-react"
 import { SectionTitle } from "./ui/section-title"
 
 const stats = [
@@ -55,13 +55,13 @@ export default function About() {
               </p>
 
                 <a
-                href="https://drive.google.com/file/d/1HyKzZwqvfWgyLHMubHvLDQfktLrlwnEa/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors"
+                  href="https://drive.google.com/file/d/1HyKzZwqvfWgyLHMubHvLDQfktLrlwnEa/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors"
                 >
-                Download CV
-                <Download className="ml-2 h-5 w-5" />
+                  View CV
+                  <ExternalLink className="ml-2 h-5 w-5" />
                 </a>
             </div>
           </div>
