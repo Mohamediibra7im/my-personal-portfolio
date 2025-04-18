@@ -23,22 +23,23 @@ const skillCategories = [
       "Bootstrap",
       "SASS",
       "React",
+      "Next.js",
     ],
   },
   {
     title: "Backend Development",
     icon: Server,
-    skills: ["ASP.NET Core", "Django", "Flask", "RESTful APIs"],
+    skills: ["ASP.NET Core", "Django", "Flask", "RESTful APIs", "Node.js"],
   },
   {
-    title: "Databases Technologies:",
+    title: "Databases Technologies",
     icon: Database,
-    skills: ["MySQL", "PostgreSQL", "MS SQL Server"],
+    skills: ["MySQL", "PostgreSQL", "MS SQL Server, SQLite", "MongoDB"],
   },
   {
     title: "Tools & IDEs",
     icon: Tool,
-    skills: ["Git & GitHub", "Visual Studio", "VS Code", "Codeblocks", "CLion", "PyCharm", "LaTeX"],
+    skills: ["Git & GitHub", "Visual Studio", "VS Code", "Codeblocks", "CLion", "PyCharm", "LaTeX", "Figma", "Postman", "Swagger"],
   },
   {
     title: "Soft Skills",
