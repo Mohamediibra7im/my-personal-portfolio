@@ -34,7 +34,7 @@ const skillCategories = [
   {
     title: "Databases Technologies",
     icon: Database,
-    skills: ["MySQL", "PostgreSQL", "MS SQL Server, SQLite", "MongoDB"],
+    skills: ["MySQL", "PostgreSQL", "MS SQL Server", "SQLite", "MongoDB"],
   },
   {
     title: "Tools & IDEs",
