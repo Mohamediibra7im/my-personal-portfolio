@@ -4,14 +4,14 @@ import Image from "next/image"
 
 const projects = [
   {
-    name: "FilmAPI",
+    name: "Personal Portfolio",
     description:
-      "A RESTful API for managing film data, built with Go and PostgreSQL. It supports CRUD operations, user authentication, and advanced search features.",
-    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMHNsoCbyF4PaobKweHshEyj7cQ3WAnrSZVpJf",
-    demoLink: "#",
-    githubLink: "https://github.com/Mohamediibra7im/FilmApi",
-    technologies: ["Go (Golang)", "Fiber", "PostgreSQL", "Logrus", "Rate Limiting"],
-    status: "still working",
+      "A personal portfolio website showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS for a responsive design.",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMToAX6tHsIRJglXdvZDBSsVL8NptFnijwCbGu",
+    demoLink: "https://mohamed-ibrahim-omar.vercel.app",
+    githubLink: "https://github.com/Mohamediibra7im/new-port",
+    technologies: ["Next.js", "Tailwind CSS", "TypeScript", "React", "Vercel"],
+    status: "Completed",
   },
   {
     name: "FCFS Scheduling Calculator",
@@ -32,6 +32,16 @@ const projects = [
     githubLink: "https://github.com/yourusername/ecommerce-platform",
     technologies: ["Django", "React", "PostgreSQL", "Tailwind CSS"],
     status: "Completed",
+  },
+  {
+    name: "FilmAPI",
+    description:
+      "A RESTful API for managing film data, built with Go and PostgreSQL. It supports CRUD operations, user authentication, and advanced search features.",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMHNsoCbyF4PaobKweHshEyj7cQ3WAnrSZVpJf",
+    demoLink: "#",
+    githubLink: "https://github.com/Mohamediibra7im/FilmApi",
+    technologies: ["Go (Golang)", "Fiber", "PostgreSQL", "Logrus", "Rate Limiting"],
+    status: "still working",
   },
   {
     name: "Weather Application",
