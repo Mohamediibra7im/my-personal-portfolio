@@ -2,6 +2,13 @@ import { ExternalLink } from "lucide-react"
 
 const certificates = [
   {
+    name: "REST API (Intermediate) Certificate",
+    issuer: "HackerRank",
+    year: "2025",
+    description: "Completed intermediate-level REST API assessment",
+    link: "https://drive.google.com/file/d/1y5EGbF99eY_CnaDQRX-5_hpq-4WGchIz/view?usp=sharing",
+  },
+  {
     name: "ECPC Qualification Contest 2024",
     issuer: "Egyptian Collegiate Programming Contest (ECPC)",
     year: "2024",
