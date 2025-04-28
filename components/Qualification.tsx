@@ -54,7 +54,7 @@ const experienceList = [
   {
     title: "Trainee - Full Stack Development with Django",
     company: "Information Technology Institute (ITI)",
-    period: "November 2024 - September 2024",
+    period: "August 2024 - September 2024",
     location: "Remote",
     description: [
       "Developing with Django and building data-driven applications",
