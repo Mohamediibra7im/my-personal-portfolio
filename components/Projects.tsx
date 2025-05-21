@@ -1,4 +1,3 @@
-// import { stat } from "fs"
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 
@@ -32,14 +31,34 @@ export const projects: Project[] = [
     status: "Completed",
   },
   {
+    name: "Event Management System",
+    description:
+    "A Java-based event management system with features for event creation, registration, and ticketing. Utilizes JavaFX for the GUI and text files for data storage.",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMgDbxGI5YV8UEhCTJjONdpB3zebFWKvI2ywxi",
+    demoLink: "#",
+    githubLink: "https://github.com/Mohamediibra7im/Event-Management-System",
+    technologies: ["Java", "OOP", "JavaFX", "Text Files"],
+    status: "Completed",
+  },
+  {
+    name: "N Puzzle Solver",
+    description:
+    "A Python-based N puzzle solver using Best First search algorithm and heuristics. It provides a GUI for user interaction and visualizes the solving process.",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMEtCJ3tIUnNYb4i5CeGA81RtDg3L9r7hPFwK0",
+    demoLink: "#",
+    githubLink: "https://github.com/Mohamediibra7im/N-Puzzle-Game",
+    technologies: ["Python", "OOP","PyQt5", "Search Algorithms", "Heuristics"],
+    status: "Completed",
+  },
+  {
     name: "E-commerce Platform",
     description:
       "A full-stack e-commerce platform built with Django and React. It features user authentication, product management, and a shopping cart system.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMcko9WzNkRhuDOr7WMXlTdm6LQ9xSJ83v1f2j",
-    demoLink: "https://demo.example.com/ecommerce",
-    githubLink: "https://github.com/yourusername/ecommerce-platform",
+    demoLink: "#",
+    githubLink: "#",
     technologies: ["Django", "React", "PostgreSQL", "Tailwind CSS"],
-    status: "Completed",
+    status: "still working",
   },
   {
     name: "FilmAPI",
@@ -56,8 +75,8 @@ export const projects: Project[] = [
     description:
       "A responsive weather application using React and OpenWeatherMap API. It provides real-time weather information, forecasts, and location-based services.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMlaTfEyLoR1OPV9X5uQF6KS2Nb07TndEwBGvp",
-    demoLink: "https://demo.example.com/weather-app",
-    githubLink: "https://github.com/yourusername/weather-app",
+    demoLink: "#",
+    githubLink: "#",
     technologies: ["React", "OpenWeatherMap API", "Geolocation API", "Tailwind CSS"],
     status: "still working",
   },
@@ -66,8 +85,8 @@ export const projects: Project[] = [
     description:
       "A comprehensive task management system with features like task creation, assignment, progress tracking, and team collaboration tools.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMrC5ni9fzWN9TU3Vd0gvfMxOqa1CRD8I64tH2",
-    demoLink: "https://demo.example.com/task-management",
-    githubLink: "https://github.com/yourusername/task-management",
+    demoLink: "#",
+    githubLink: "#",
     technologies: [".NET Core", "React", "MongoDB", "Tilwind CSS"],
     status: "still working",
   },
@@ -76,8 +95,8 @@ export const projects: Project[] = [
     description:
       "A feature-rich Todo list application built with React and TypeScript. Includes task prioritization, due dates, and local storage persistence.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMreCLcsNfzWN9TU3Vd0gvfMxOqa1CRD8I64tH",
-    demoLink: "https://demo.example.com/todo-list",
-    githubLink: "https://github.com/yourusername/todo-list-app",
+    demoLink: "#",
+    githubLink: "#",
     technologies: ["React", "TypeScript", "LocalStorage API", "Tailwind CSS"],
     status: "still working",
   },
@@ -115,25 +134,29 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4 flex-wrap">
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2 " />
-                    Demo
-                  </a>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center px-3 py-2 text-sm font-medium border border-gray-900 text-gray-900 rounded-xl hover:bg-gray-100 transition-colors"
-                  >
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </a>
+                <div className="flex items-center gap-2 flex-nowrap">
+                  {project.demoLink && project.demoLink !== "#" && (
+                    <a
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Demo
+                    </a>
+                  )}
+                  {project.githubLink && project.githubLink !== "#" && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium border border-gray-900 text-gray-900 rounded-xl hover:bg-gray-100 transition-colors"
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
+                    </a>
+                  )}
                   {project.status.toLowerCase() === "still working" && (
                     <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-500 bg-gray-100 rounded-xl">
                       <svg
