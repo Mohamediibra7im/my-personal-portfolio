@@ -1,12 +1,21 @@
 // import { stat } from "fs"
-import { ExternalLink, Github } from "lucide-react"
-import Image from "next/image"
+import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 
-const projects = [
+interface Project {
+  name: string;
+  description: string;
+  image: string;
+  demoLink: string;
+  githubLink: string;
+  technologies: string[];
+  status: string;
+}
+
+export const projects: Project[] = [
   {
     name: "Personal Portfolio",
-    description:
-      "A personal portfolio website showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS for a responsive design.",
+    description:"A personal portfolio website showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS for a responsive design.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMToAX6tHsIRJglXdvZDBSsVL8NptFnijwCbGu",
     demoLink: "https://mohamed-ibrahim-omar.vercel.app",
     githubLink: "https://github.com/Mohamediibra7im/new-port",
@@ -15,8 +24,7 @@ const projects = [
   },
   {
     name: "FCFS Scheduling Calculator",
-    description:
-      "Web-based FCFS scheduling calculator using Flask and JavaScript, Users input process data and view scheduling results with visualization.",
+    description:"Web-based FCFS scheduling calculator using Flask and JavaScript, Users input process data and view scheduling results with visualization.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMYBBY5Fyfz6Mm2PYwX1GIl8K0pg7hWVdBZy3N",
     demoLink: "https://fcfs-scheduling-calculator.vercel.app/",
     githubLink: "https://github.com/Mohamediibra7im/FCFS-Scheduling-Calculator",
@@ -73,7 +81,7 @@ const projects = [
     technologies: ["React", "TypeScript", "LocalStorage API", "Tailwind CSS"],
     status: "still working",
   },
-]
+];
 
 export default function Projects() {
   return (
@@ -81,102 +89,101 @@ export default function Projects() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">Featured Projects</h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-            {projects.map((project, index) => (
+          {projects.map((project, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
             >
               <div className="relative h-48 sm:h-64 overflow-hidden">
-              <Image
-                src={project.image || "/placeholder.svg"}
-                alt={project.name}
-                layout="fill"
-                objectFit="cover"
-                className="transform group-hover:scale-110 transition-transform duration-500"
-              />
+                <Image
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.name}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transform group-hover:scale-110 transition-transform duration-500"
+                />
               </div>
               <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gray-600 transition-colors">
-                {project.name}
-              </h3>
-              <p className="text-gray-600 mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies.map((tech, i) => (
-                <span key={i} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
-                  {tech}
-                </span>
-                ))}
-              </div>
-              <div className="flex gap-4 flex-wrap">
-                <a
-                href={project.demoLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors"
-                >
-                <ExternalLink className="w-4 h-4 mr-2 " />
-                Demo
-                </a>
-                <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center px-3 py-2 text-sm font-medium border border-gray-900 text-gray-900 rounded-xl hover:bg-gray-100 transition-colors"
-                >
-                <Github className="w-4 h-4 mr-2" />
-                Code
-                </a>
-                {project.status.toLowerCase() === "still working" && (
-                <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-500 bg-gray-100 rounded-xl">
-                  <svg
-                  className="w-4 h-4 mr-2 animate-spin"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gray-600 transition-colors">
+                  {project.name}
+                </h3>
+                <p className="text-gray-600 mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.technologies.map((tech, i) => (
+                    <span key={i} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex gap-4 flex-wrap">
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors"
                   >
-                  <circle
-                    className="opacity-25"
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="4"
-                  ></circle>
-                  <path
-                    className="opacity-75"
-                    fill="currentColor"
-                    d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
-                  ></path>
-                  </svg>
-                  Under Development
-                </span>
-                )}
-                {project.status.toLowerCase() === "completed" && (
-                <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-green-600 bg-green-100 rounded-xl">
-                  <svg
-                  className="w-4 h-4 mr-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
+                    <ExternalLink className="w-4 h-4 mr-2 " />
+                    Demo
+                  </a>
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center px-3 py-2 text-sm font-medium border border-gray-900 text-gray-900 rounded-xl hover:bg-gray-100 transition-colors"
                   >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M5 13l4 4L19 7"
-                  />
-                  </svg>
-                  Completed
-                </span>
-                )}
-              </div>
+                    <Github className="w-4 h-4 mr-2" />
+                    Code
+                  </a>
+                  {project.status.toLowerCase() === "still working" && (
+                    <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-500 bg-gray-100 rounded-xl">
+                      <svg
+                        className="w-4 h-4 mr-2 animate-spin"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                        ></path>
+                      </svg>
+                      Under Development
+                    </span>
+                  )}
+                  {project.status.toLowerCase() === "completed" && (
+                    <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-green-600 bg-green-100 rounded-xl">
+                      <svg
+                        className="w-4 h-4 mr-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      Completed
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
-            ))}
+          ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
-

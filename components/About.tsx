@@ -1,5 +1,7 @@
-import { ExternalLink, Briefcase, FolderIcon as FolderDone, Headphones } from "lucide-react"
-import { SectionTitle } from "./ui/section-title"
+import { ExternalLink, Briefcase, FolderIcon as FolderDone, Headphones } from "lucide-react";
+import { SectionTitle } from "./ui/section-title";
+import { projects } from "./Projects";
+
 
 const stats = [
   {
@@ -10,7 +12,7 @@ const stats = [
   },
   {
     label: "Completed",
-    value: "10+",
+    value: `${projects.length}+`, // Use the calculated count
     description: "Projects",
     icon: FolderDone,
   },
@@ -20,7 +22,7 @@ const stats = [
     description: "Online",
     icon: Headphones,
   },
-]
+];
 
 export default function About() {
   return (
@@ -54,20 +56,19 @@ export default function About() {
                 efficient and impactful solutions.
               </p>
 
-                <a
-                  href="https://drive.google.com/file/d/1HyKzZwqvfWgyLHMubHvLDQfktLrlwnEa/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors"
-                >
-                  View CV
-                  <ExternalLink className="ml-2 h-5 w-5" />
-                </a>
+              <a
+                href="https://drive.google.com/file/d/1HyKzZwqvfWgyLHMubHvLDQfktLrlwnEa/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors"
+              >
+                View CV
+                <ExternalLink className="ml-2 h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
-
