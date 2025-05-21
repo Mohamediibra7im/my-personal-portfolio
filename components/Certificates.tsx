@@ -2,6 +2,13 @@ import { ExternalLink } from "lucide-react"
 
 const certificates = [
   {
+    name: "Problem Solving (Intermediate) Certificate",
+    issuer: "HackerRank",
+    year: "2025",
+    description: "Completed intermediate-level problem-solving assessment",
+    link: "https://drive.google.com/file/d/1Kq_w7CqgNpBk5Z9GFBeSnxO0yu6I8JM3/view?usp=sharing",
+  },
+  {
     name: "REST API (Intermediate) Certificate",
     issuer: "HackerRank",
     year: "2025",
