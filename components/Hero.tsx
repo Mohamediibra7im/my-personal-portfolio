@@ -7,9 +7,17 @@ export default function Hero() {
     <section className="pt-32 pb-16">
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="order-2 md:order-1">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Mohamed Ibrahim <span className="text-yellow-400">👋</span>
-          </h1>
+            <h1 className="text-4xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+            Mohamed Ibrahim
+            <Image
+              src="https://camo.githubusercontent.com/d552948e7884c41fde2d32b9221d79f0df2076c7d824aaab954ca93f53d95884/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966"
+              alt="Waving Hand Gif"
+              width={33}
+              height={33}
+              className="inline-block"
+              unoptimized
+            />
+            </h1>
           <div className="mb-6">
             <p className="text-xl text-gray-600">
               Full Stack Software Engineer <br className="hidden sm:inline" />
