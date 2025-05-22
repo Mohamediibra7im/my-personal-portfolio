@@ -24,7 +24,7 @@ const experienceList = [
   {
     title: "Trainee - Full Stack Development with .NET",
     company: "Digital Egypt Pioneers Initiative (DEPI)",
-    period: "November 2024 - Present",
+    period: "November 2024 - May 2025",
     location: "Hybrid",
     description: [
       "Developing with .NET technologies and building data-driven applications",
