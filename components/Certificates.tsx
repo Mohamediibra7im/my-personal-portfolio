@@ -2,14 +2,14 @@ import { ExternalLink } from "lucide-react"
 
 const certificates = [
   {
-    name: "Problem Solving (Intermediate) Certificate",
+    name: "Problem Solving (Intermediate) Assessment",
     issuer: "HackerRank",
     year: "2025",
     description: "Completed intermediate-level problem-solving assessment",
     link: "https://drive.google.com/file/d/1Kq_w7CqgNpBk5Z9GFBeSnxO0yu6I8JM3/view?usp=sharing",
   },
   {
-    name: "REST API (Intermediate) Certificate",
+    name: "REST API (Intermediate) Assessment",
     issuer: "HackerRank",
     year: "2025",
     description: "Completed intermediate-level REST API assessment",
@@ -30,10 +30,10 @@ const certificates = [
     link: "https://drive.google.com/file/d/1CE6S3OIo_K3sp3s9aVpGw5BemcAKTJhl/view?usp=sharing",
   },
   {
-    name: "Problem Solving Assessment",
+    name: "Problem Solving (Basic) Assessment",
     issuer: "HackerRank",
     year: "2024",
-    description: "Demonstrated advanced problem-solving capabilities",
+    description: "Completed basic-level problem-solving assessment",
     link: "https://drive.google.com/file/d/1bxUqxSKhq2Qlo6lHGoE45xrEdhxbKYDl/view?usp=sharing",
   },
   {
