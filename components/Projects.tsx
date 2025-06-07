@@ -36,7 +36,7 @@ export const projects: Project[] = [
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMYBBY5Fyfz6Mm2PYwX1GIl8K0pg7hWVdBZy3N",
     demoLink: "https://fcfs-scheduling-calculator.vercel.app/",
     githubLink: "https://github.com/Mohamediibra7im/FCFS-Scheduling-Calculator",
-    technologies: ["Python", "Flask", "JavaScript", "HTML/CSS", "Bootstrap", "SQLite"],
+    technologies: ["Python", "Flask", "JavaScript", "HTML/CSS", "SQLite"],
     status: "Completed",
   },
   {
