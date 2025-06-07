@@ -22,6 +22,15 @@ export const projects: Project[] = [
     status: "Completed",
   },
   {
+    name: "CF-Problem Scraper",
+    description:"A Python application that scrapes Codeforces for problem data, allowing users to search and filter problems based on difficulty, tags, and more. Features a GUI built with PyQt5.",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMyNGGM797TUs6cnz3kjxt2DgZSNiA0o9KXm4h",
+    demoLink: "https://lnkd.in/dsgK-gci",
+    githubLink: "https://github.com/Mohamediibra7im/CF-Problem-Scraper",
+    technologies: ["Python", "PyQt5", "requests", "requests-cache", "JSON"],
+    status: "Completed",
+  },
+  {
     name: "FCFS Scheduling Calculator",
     description:"Web-based FCFS scheduling calculator using Flask and JavaScript, Users input process data and view scheduling results with visualization.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMYBBY5Fyfz6Mm2PYwX1GIl8K0pg7hWVdBZy3N",
