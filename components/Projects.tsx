@@ -31,12 +31,22 @@ export const projects: Project[] = [
     status: "Completed",
   },
   {
+    name: "Collage Management System",
+    description:"CMS is a web application that simplifies and automates academic and administrative tasks, improving efficiency and offering an easy-to-use interface for students, faculty, and administrators.",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMgzzigE5YV8UEhCTJjONdpB3zebFWKvI2ywxi",
+    demoLink: "#",
+    githubLink: "https://github.com/Collage-Management-System",
+    technologies: ["C#", "ASP.NET Core", "Entity Framework", "SQL Server", "Next.js", "Tailwind CSS"],
+    status: "Completed",
+  },
+  
+  {
     name: "FCFS Scheduling Calculator",
-    description:"Web-based FCFS scheduling calculator using Flask and JavaScript, Users input process data and view scheduling results with visualization.",
+    description:"A web-based calculator for First-Come, First-Served (FCFS) scheduling algorithm. It allows users to input process details and calculates waiting time, turnaround time, and average waiting time.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMYBBY5Fyfz6Mm2PYwX1GIl8K0pg7hWVdBZy3N",
     demoLink: "https://fcfs-scheduling-calculator.vercel.app/",
     githubLink: "https://github.com/Mohamediibra7im/FCFS-Scheduling-Calculator",
-    technologies: ["Python", "Flask", "JavaScript", "HTML/CSS", "SQLite"],
+    technologies: ["Python", "Flask", "JavaScript", "HTML/CSS", "SQLite", "Bootstrap"],
     status: "Completed",
   },
   {
