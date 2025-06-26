@@ -2,6 +2,20 @@ import { ExternalLink } from "lucide-react"
 
 const certificates = [
   {
+    name: "Software Engineer Intern Certification",
+    issuer: "HackerRank",
+    year: "2025",
+    description: "A verified HackerRank certification showcasing foundational software engineering abilities, suitable for internship roles",
+    link: "https://drive.google.com/file/d/1XKaw4Bc85CxBuMLtkwr10VX2j2zcUQgO/view?usp=sharing",
+  },
+  {
+    name: "Software Engineer Certification",
+    issuer: "HackerRank",
+    year: "2025",
+    description: "A verified HackerRank certification demonstrating proficiency in software engineering concepts, problem-solving, and coding skills",
+    link: "https://drive.google.com/file/d/1JSA_LBGXa_D8blm1phY_JeTQ4TmvdzGp/view?usp=sharing",
+  },
+  {
     name: "Problem Solving (Intermediate) Assessment",
     issuer: "HackerRank",
     year: "2025",
