@@ -2,6 +2,13 @@ import { ExternalLink } from "lucide-react"
 
 const certificates = [
   {
+    name: "Introduction to Software Testing Certification",
+    issuer: "Sprints",
+    year: "2025",
+    description: "A verified certification demonstrating foundational knowledge in software testing principles and practices",
+    link: "https://drive.google.com/file/d/1Ug5khWHe32Hg7pc72f0HwVK1aRsqGIDN/view?usp=sharing",
+  },
+  {
     name: "Software Engineer Intern Certification",
     issuer: "HackerRank",
     year: "2025",
