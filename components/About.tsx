@@ -54,7 +54,7 @@ export default function About() {
                   <br /><br />
                   Beyond coding, I&apos;ve embraced leadership as Vice President &amp; Head of Technical Committee at HNU - FCSIT ICPC Community and as Head of Researchers at Triple-S Cairo branch. These roles have sharpened my problem-solving, teamwork, and leadership abilities.
                   <br /><br />
-                  My portfolio features diverse projects—from a Codeforces problem scraper and a College Management System to a Film API and this very portfolio site—demonstrating my adaptability and drive to deliver real-world solutions. I&apos;m always eager to learn, grow, and take on new challenges where I can blend technical excellence with collaborative leadership.
+                  My portfolio features diverse projects from a Codeforces problem scraper and a College Management System to a Film API and this very portfolio site demonstrating my adaptability and drive to deliver real-world solutions. I&apos;m always eager to learn, grow, and take on new challenges where I can blend technical excellence with collaborative leadership.
                 </p>
 
                 <a
