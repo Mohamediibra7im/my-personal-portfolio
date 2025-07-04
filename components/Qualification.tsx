@@ -1,4 +1,6 @@
-import { GraduationCap, Briefcase } from "lucide-react"
+import { GraduationCap, BriefcaseBusiness, BookOpenCheck } from "lucide-react"
+import React from "react"
+import { SectionTitle } from "./ui/section-title";
 
 const educationList = [
   {
@@ -22,6 +24,28 @@ const experienceList = [
     ],
   },
   {
+    title: "Academic Coordinator",
+    company: "Summarize Team",
+    period: "January 2024 - February 2025",
+    location: "Cairo, Egypt",
+    description: [
+      "Advising students on academic matters, including course selection, academic performance, and career guidance.",
+    ],
+  },
+  {
+    title: "Head of Researchers",
+    company: "Triple-S Cairo branch",
+    period: "November 2023 - February 2024",
+    location: "Cairo, Egypt",
+    description: [
+      "Leading and managing the research team, which includes hiring, mentoring, and evaluating researchers.",
+      "Managing the resources allocated to research, including budgets, equipment, and facilities.",
+    ],
+  },
+]
+
+const trainingsAndInternsList = [
+  {
     title: "Trainee - Full Stack Development with .NET",
     company: "Digital Egypt Pioneers Initiative (DEPI)",
     period: "November 2024 - May 2025",
@@ -43,15 +67,6 @@ const experienceList = [
     ],
   },
   {
-    title: "Academic Coordinator",
-    company: "Summarize Team",
-    period: "January 2024 - February 2025",
-    location: "Cairo, Egypt",
-    description: [
-      "Advising students on academic matters, including course selection, academic performance, and career guidance.",
-    ],
-  },
-  {
     title: "Trainee - Full Stack Development with Django",
     company: "Information Technology Institute (ITI)",
     period: "August 2024 - September 2024",
@@ -62,74 +77,103 @@ const experienceList = [
       "Gaining experience in full-stack development and web application design",
     ],
   },
-  {
-    title: "Head of Researchers",
-    company: "Triple-S Cairo branch",
-    period: "November 2023 - February 2024",
-    location: "Cairo, Egypt",
-    description: [
-      "Leading and managing the research team, which includes hiring, mentoring, and evaluating researchers.",
-      "Managing the resources allocated to research, including budgets, equipment, and facilities.",
-    ],
-  },
 ]
 
 export default function Qualification() {
   return (
     <section id="qualifications" className="py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Qualification</h2>
-          <p className="text-gray-600">My personal journey</p>
-        </div>
+        <SectionTitle subtitle="A snapshot of my academic and professional journey">
+          Qualifications
+        </SectionTitle>
 
-        <div className="max-w-2xl mx-auto">
-          {/* Education Section */}
-          <div className="mb-12">
-            <div className="flex items-center gap-2 mb-8">
-              <GraduationCap className="w-6 h-6" />
-              <span className="text-lg font-medium">Education</span>
-            </div>
-            <div className="relative">
-              <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200"></div>
-              <div className="space-y-12">
-                {educationList.map((edu, index) => (
-                  <div key={index} className="relative pl-12">
-                    <div className="absolute left-3 top-2 w-3 h-3 bg-gray-600 rounded-full border-4 border-white"></div>
-                    <h3 className="text-lg font-semibold text-gray-900">{edu.degree}</h3>
-                    <p className="text-gray-600">{edu.school}</p>
-                    <p className="text-sm text-gray-500 mt-1">{edu.year}</p>
+        {/* Education Section */}
+        <div className="max-w-3xl mx-auto mb-20">
+          <div className="flex items-center gap-2 mb-8">
+            <GraduationCap className="w-7 h-7 text-gray-800" />
+            <span className="text-xl font-semibold text-gray-900">Education</span>
+          </div>
+          <div className="relative">
+            <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200"></div>
+            <div className="space-y-12">
+              {educationList.map((edu, index) => (
+                <div key={index} className="relative pl-12 group">
+                  <div className="absolute left-3 top-2 w-3 h-3 bg-gray-900 rounded-full border-4 border-white group-hover:scale-110 transition-transform"></div>
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+                    {edu.degree}
+                  </h3>
+                  <p className="text-gray-700">{edu.school}</p>
+                  <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                    <span>{edu.year}</span>
+                    <span className="hidden sm:inline">|</span>
+                    <span className="hidden sm:inline">{edu.location}</span>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
+        </div>
 
-          {/* Experience Section */}
-          <div>
-            <div className="flex items-center gap-2 mb-8">
-              <Briefcase className="w-6 h-6" />
-              <span className="text-lg font-medium">Experience</span>
-            </div>
-            <div className="relative">
-              <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200"></div>
-              <div className="space-y-12">
-                {experienceList.map((exp, index) => (
-                  <div key={index} className="relative pl-12">
-                    <div className="absolute left-3 top-2 w-3 h-3 bg-gray-600 rounded-full border-4 border-white"></div>
-                    <h3 className="text-lg font-semibold text-gray-900">{exp.title}</h3>
-                    <p className="text-gray-600">{exp.company}</p>
-                    <p className="text-sm text-gray-500 mt-1">{exp.period}</p>
-                    <ul className="mt-2 list-disc list-inside text-gray-600 space-y-1">
-                      {exp.description.map((item, i) => (
-                        <li key={i} className="text-sm">
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
+        {/* Experience Section */}
+        <div className="max-w-3xl mx-auto mb-20">
+          <div className="flex items-center gap-2 mb-8">
+            <BriefcaseBusiness className="w-7 h-7 text-gray-800" />
+            <span className="text-xl font-semibold text-gray-900">Experience</span>
+          </div>
+          <div className="relative">
+            <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200"></div>
+            <div className="space-y-12">
+              {experienceList.map((exp, index) => (
+                <div key={index} className="relative pl-12 group">
+                  <div className="absolute left-3 top-2 w-3 h-3 bg-gray-900 rounded-full border-4 border-white group-hover:scale-110 transition-transform"></div>
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+                    {exp.title}
+                  </h3>
+                  <p className="text-gray-700">{exp.company}</p>
+                  <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                    <span>{exp.period}</span>
+                    <span className="hidden sm:inline">|</span>
+                    <span className="hidden sm:inline">{exp.location}</span>
                   </div>
-                ))}
-              </div>
+                  <ul className="mt-2 list-disc list-inside text-gray-600 space-y-1">
+                    {exp.description.map((item, i) => (
+                      <li key={i} className="text-sm">{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Trainings & Internships Section */}
+        <div className="max-w-3xl mx-auto">
+          <div className="flex items-center gap-2 mb-8">
+            <BookOpenCheck className="w-7 h-7 text-gray-800" />
+            <span className="text-xl font-semibold text-gray-900">Trainings & Internships</span>
+          </div>
+          <div className="relative">
+            <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200"></div>
+            <div className="space-y-12">
+              {trainingsAndInternsList.map((exp, index) => (
+                <div key={index} className="relative pl-12 group">
+                  <div className="absolute left-3 top-2 w-3 h-3 bg-gray-900 rounded-full border-4 border-white group-hover:scale-110 transition-transform"></div>
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+                    {exp.title}
+                  </h3>
+                  <p className="text-gray-700">{exp.company}</p>
+                  <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                    <span>{exp.period}</span>
+                    <span className="hidden sm:inline">|</span>
+                    <span className="hidden sm:inline">{exp.location}</span>
+                  </div>
+                  <ul className="mt-2 list-disc list-inside text-gray-600 space-y-1">
+                    {exp.description.map((item, i) => (
+                      <li key={i} className="text-sm">{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -137,4 +181,3 @@ export default function Qualification() {
     </section>
   )
 }
-

@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react"
+import { SectionTitle } from "./ui/section-title";
 
 const certificates = [
   {
@@ -117,11 +118,11 @@ const certificates = [
 
 export default function Certificates() {
   return (
-    <section id="certificates" className="py-16 sm:py-20 bg-white">
+    <section id="certificates" className="py-16 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">
-          Professional Certifications
-        </h2>
+        <SectionTitle subtitle="Professional Certifications">
+          Certificates
+        </SectionTitle>
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {certificates.map((cert, index) => (
             <div

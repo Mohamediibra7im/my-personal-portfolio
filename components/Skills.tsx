@@ -1,4 +1,5 @@
 import { Code, Puzzle, Database, Globe, Server, PenToolIcon as Tool, Users } from "lucide-react"
+import { SectionTitle } from "./ui/section-title";
 
 const skillCategories = [
   {
@@ -63,11 +64,11 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-16 bg-white">
+    <section id="skills" className="py-20 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">
-          Technical Proficiencies
-        </h2>
+        <SectionTitle subtitle="Technical Proficiencies">
+          Skills
+        </SectionTitle>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {skillCategories.map((category) => (
             <div

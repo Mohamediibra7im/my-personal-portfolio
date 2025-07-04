@@ -6,13 +6,13 @@ import { projects } from "./Projects";
 const stats = [
   {
     label: "Experience",
-    value: "2+ Years",
+    value: "3+ Years",
     description: "Working",
     icon: Briefcase,
   },
   {
     label: "Completed",
-    value: `${projects.length}+`, // Use the calculated count
+    value: `${projects.length}+`,
     description: "Projects",
     icon: FolderDone,
   },
@@ -26,7 +26,7 @@ const stats = [
 
 export default function About() {
   return (
-    <section id="about" className="py-16">
+    <section id="about" className="py-16 sm:py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle subtitle="My introduction">About Me</SectionTitle>
 
@@ -57,15 +57,16 @@ export default function About() {
                   My portfolio features diverse projects—from a Codeforces problem scraper and a College Management System to a Film API and this very portfolio site—demonstrating my adaptability and drive to deliver real-world solutions. I&apos;m always eager to learn, grow, and take on new challenges where I can blend technical excellence with collaborative leadership.
                 </p>
 
-              <a
+                <a
                 href="https://drive.google.com/file/d/1HyKzZwqvfWgyLHMubHvLDQfktLrlwnEa/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors"
-              >
-                View CV
-                <ExternalLink className="ml-2 h-5 w-5" />
-              </a>
+                className="inline-flex items-center gap-2 px-7 py-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white font-semibold rounded-full shadow-lg hover:from-gray-800 hover:to-gray-900 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700"
+                aria-label="View my CV (opens in new tab)"
+                >
+                <span>View CV</span>
+                <ExternalLink className="h-5 w-5" />
+                </a>
             </div>
           </div>
         </div>

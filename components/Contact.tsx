@@ -1,5 +1,6 @@
 "use client"
 
+import { SectionTitle } from "./ui/section-title";
 import { Mail, Phone, MapPin } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { sendEmail } from "@/app/actions/send-email"
@@ -16,8 +17,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16">
-      <h2 className="text-2xl font-semibold text-gray-900 mb-12 text-center">Get in touch</h2>
+    <section id="contact" className="py-16 sm:py-20">
+      <SectionTitle subtitle="Get in touch">Contact</SectionTitle>
       <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto px-4">
         <div>
           <h3 className="text-lg font-medium text-gray-900 mb-6">Contact Information</h3>

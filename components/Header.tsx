@@ -32,44 +32,53 @@ export default function Header() {
             />
             <span className="text-xl font-semibold text-gray-900">Mohammed Ibrahim</span>
           </Link>
-          <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-6">
             {navigation.map((link) => (
-              <a key={link.name} href={link.href} className="text-sm font-medium text-gray-700 hover:text-gray-900">
+                <a
+                key={link.name}
+                href={link.href}
+                className="relative text-sm font-medium text-gray-700 dark:text-gray-100 hover:text-[#1B263B] dark:hover:text-[#A7C957] transition-colors px-2 py-1
+                  after:content-[''] after:block after:h-0.5 after:bg-[#1B263B] dark:after:bg-[#A7C957] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 after:origin-left"
+                >
                 {link.name}
-              </a>
+                </a>
             ))}
-          </div>
-          <div className="md:hidden">
+            </div>
+            <div className="md:hidden">
             <button
               type="button"
-              className="text-gray-700 hover:text-gray-900"
+              className="text-gray-700 hover:text-gray-900 rounded-full p-2 transition-colors"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Open main menu</span>
               {mobileMenuOpen ? (
-                <X className="h-6 w-6" aria-hidden="true" />
+              <X className="h-6 w-6" aria-hidden="true" />
               ) : (
-                <Menu className="h-6 w-6" aria-hidden="true" />
+              <Menu className="h-6 w-6" aria-hidden="true" />
               )}
             </button>
-          </div>
-        </div>
-        {mobileMenuOpen && (
-          <div className="md:hidden">
-            <div className="pt-2 pb-3 space-y-1">
-              {navigation.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              ))}
             </div>
-          </div>
-        )}
+            </div>
+            {mobileMenuOpen && (
+            <div className="md:hidden">
+                <div
+                  className={`pt-2 pb-3 space-y-1 bg-white/70 backdrop-blur-sm rounded-xl shadow-lg mx-2 mt-2 transition-all duration-300 ease-in-out transform ${
+                    mobileMenuOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+                  }`}
+                >
+                  {navigation.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gray-900 rounded-lg transition-colors"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
+            </div>
+            )}
       </nav>
     </header>
   )
