@@ -23,6 +23,15 @@ export const projects: Project[] = [
     status: "Completed",
   },
   {
+    name: "Collage Management System",
+    description:"CMS is a web application that simplifies and automates academic and administrative tasks, improving efficiency and offering an easy-to-use interface for students, faculty, and administrators.",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMgzzigE5YV8UEhCTJjONdpB3zebFWKvI2ywxi",
+    demoLink: "#",
+    githubLink: "https://github.com/Collage-Management-System",
+    technologies: ["C#", "ASP.NET Core", "Entity Framework", "SQL Server", "Next.js", "Tailwind CSS"],
+    status: "Completed",
+  },
+  {
     name: "CF-Problem Scraper",
     description:"A Python application that scrapes Codeforces for problem data, allowing users to search and filter problems based on difficulty, tags, and more. Features a GUI built with PyQt5.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMyNGGM797TUs6cnz3kjxt2DgZSNiA0o9KXm4h",
@@ -32,32 +41,12 @@ export const projects: Project[] = [
     status: "Completed",
   },
   {
-    name: "Collage Management System",
-    description:"CMS is a web application that simplifies and automates academic and administrative tasks, improving efficiency and offering an easy-to-use interface for students, faculty, and administrators.",
-    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMgzzigE5YV8UEhCTJjONdpB3zebFWKvI2ywxi",
-    demoLink: "#",
-    githubLink: "https://github.com/Collage-Management-System",
-    technologies: ["C#", "ASP.NET Core", "Entity Framework", "SQL Server", "Next.js", "Tailwind CSS"],
-    status: "Completed",
-  },
-  
-  {
     name: "FCFS Scheduling Calculator",
     description:"A web-based calculator for First-Come, First-Served (FCFS) scheduling algorithm. It allows users to input process details and calculates waiting time, turnaround time, and average waiting time.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMYBBY5Fyfz6Mm2PYwX1GIl8K0pg7hWVdBZy3N",
     demoLink: "https://fcfs-scheduling-calculator.vercel.app/",
     githubLink: "https://github.com/Mohamediibra7im/FCFS-Scheduling-Calculator",
     technologies: ["Python", "Flask", "JavaScript", "HTML/CSS", "SQLite", "Bootstrap"],
-    status: "Completed",
-  },
-  {
-    name: "Event Management System",
-    description:
-    "A Java-based event management system with features for event creation, registration, and ticketing. Utilizes JavaFX for the GUI and text files for data storage.",
-    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMgDbxGI5YV8UEhCTJjONdpB3zebFWKvI2ywxi",
-    demoLink: "#",
-    githubLink: "https://github.com/Mohamediibra7im/Event-Management-System",
-    technologies: ["Java", "OOP", "JavaFX", "Text Files"],
     status: "Completed",
   },
   {
@@ -71,14 +60,14 @@ export const projects: Project[] = [
     status: "Completed",
   },
   {
-    name: "E-commerce Platform",
+    name: "Event Management System",
     description:
-      "A full-stack e-commerce platform built with Django and React. It features user authentication, product management, and a shopping cart system.",
-    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMcko9WzNkRhuDOr7WMXlTdm6LQ9xSJ83v1f2j",
+    "A Java-based event management system with features for event creation, registration, and ticketing. Utilizes JavaFX for the GUI and text files for data storage.",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMgDbxGI5YV8UEhCTJjONdpB3zebFWKvI2ywxi",
     demoLink: "#",
-    githubLink: "#",
-    technologies: ["Django", "React", "PostgreSQL", "Tailwind CSS"],
-    status: "still working",
+    githubLink: "https://github.com/Mohamediibra7im/Event-Management-System",
+    technologies: ["Java", "OOP", "JavaFX", "Text Files"],
+    status: "Completed",
   },
   {
     name: "FilmAPI",
@@ -88,6 +77,16 @@ export const projects: Project[] = [
     demoLink: "#",
     githubLink: "https://github.com/Mohamediibra7im/FilmApi",
     technologies: ["Go (Golang)", "Fiber", "PostgreSQL", "Logrus", "Rate Limiting"],
+    status: "Completed",
+  },
+  {
+    name: "E-commerce Platform",
+    description:
+      "A full-stack e-commerce platform built with Django and React. It features user authentication, product management, and a shopping cart system.",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMcko9WzNkRhuDOr7WMXlTdm6LQ9xSJ83v1f2j",
+    demoLink: "#",
+    githubLink: "#",
+    technologies: ["Django", "React", "PostgreSQL", "Tailwind CSS"],
     status: "still working",
   },
   {
