@@ -3,6 +3,13 @@ import { SectionTitle } from "./ui/section-title";
 
 const certificates = [
   {
+    name: "Full Stack .Net Web Development Certification",
+    issuer: "Digital Egypt Pioneers Initiative - DEPI",
+    year: "2025",
+    description: "A verified certification demonstrating proficiency in Full Stack .Net Web Development, including ASP.NET Core, Entity Framework",
+    link: "https://drive.google.com/file/d/1QNdP-IC-PA0MusFB0Zpqj4cnqu673Phe/view?usp=sharing",
+  },
+  {
     name: "Introduction to Software Testing Certification",
     issuer: "Sprints",
     year: "2025",
