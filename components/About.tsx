@@ -6,7 +6,7 @@ import { projects } from "./Projects";
 const stats = [
   {
     label: "Experience",
-    value: "3+ Years",
+    value: "2+ Years",
     description: "Working",
     icon: Briefcase,
   },
