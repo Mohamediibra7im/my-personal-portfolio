@@ -35,7 +35,7 @@ export default function About() {
             <div className="space-y-8 text-center">
               <div className="grid grid-cols-3 gap-4">
                 {stats.map((stat) => (
-                  <div key={stat.label} className="bg-gray-50 rounded-xl p-4 text-center shadow-sm">
+                  <div key={stat.label} className="bg-gray-50 rounded-xl p-4 shadow-sm hover:shadow-lg transition-shadow duration-300">
                     <div className="flex justify-center mb-2">
                       <stat.icon className="w-6 h-6 text-gray-700" />
                     </div>
