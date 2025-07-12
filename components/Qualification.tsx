@@ -1,6 +1,7 @@
-import { GraduationCap, BriefcaseBusiness, BookOpenCheck } from "lucide-react"
+import { GraduationCap, BriefcaseBusiness} from "lucide-react"
 import React from "react"
 import { SectionTitle } from "./ui/section-title";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
 
 const educationList = [
   {
@@ -12,6 +13,52 @@ const educationList = [
 ]
 
 const experienceList = [
+  {
+    title: "Trainee - Full Stack .NetWeb Development Internship",
+    company: "Digital Egypt Pioneers Initiative (DEPI)",
+    period: "November 2024 - May 2025",
+    location: "Hybrid",
+    description: [
+      "Developing with .NET technologies and building data-driven applications",
+      "Working with C#, HTML5, JavaScript, CSS3, and .NET Core Web API",
+      "Delivering full-stack solutions for scalable web services and applications",
+    ],
+  },
+  {
+    title: "Trainee - Full Stack Development with Python",
+    company: "Information Technology Institute (ITI)",
+    period: "August 2024 - September 2024",
+    location: "Remote",
+    description: [
+      "Developing with Django and building data-driven applications",
+      "Working with Python, HTML5, JavaScript, CSS3, and Django REST Framework",
+      "Gaining experience in full-stack development and web application design",
+    ],
+  },
+  {
+    title: "Trainee - Competitive Programming Internship",
+    company: "IEEE Delta Academy",
+    period: "November 2024 - February 2025",
+    location: "Remote",
+    description: [
+      "Participating in competitive programming training sessions and contests",
+      "Learning algorithms and data structures to solve complex problems efficiently",
+      "Collaborating with peers to enhance problem-solving skills and coding techniques",
+    ],
+  },
+  {
+    title: "Trainee - Level 2 Problem Solving Training",
+    company: "Coach Academy",
+    period: "July 2024 - October 2024",
+    location: "Remote",
+    description: [
+      "This training includes hands-on experience in competitive programming, focusing on problem-solving and optimization techniques to enhance performance in programming competitions"
+    ],
+  },
+
+]
+
+const volunteeringList = [
   {
     title: "Vice President & Head of Technical Committee",
     company: "HNU-FCSIT ICPC Community",
@@ -40,41 +87,6 @@ const experienceList = [
     description: [
       "Leading and managing the research team, which includes hiring, mentoring, and evaluating researchers.",
       "Managing the resources allocated to research, including budgets, equipment, and facilities.",
-    ],
-  },
-]
-
-const trainingsAndInternsList = [
-  {
-    title: "Trainee - Full Stack Development with .NET",
-    company: "Digital Egypt Pioneers Initiative (DEPI)",
-    period: "November 2024 - May 2025",
-    location: "Hybrid",
-    description: [
-      "Developing with .NET technologies and building data-driven applications",
-      "Working with C#, HTML5, JavaScript, CSS3, and .NET Core Web API",
-    ],
-  },
-  {
-    title: "Trainee - Competitive Programming (Intern)",
-    company: "IEEE Delta Academy",
-    period: "November 2024 - February 2025",
-    location: "Remote",
-    description: [
-      "Participating in competitive programming training sessions and contests",
-      "Learning algorithms and data structures to solve complex problems efficiently",
-      "Collaborating with peers to enhance problem-solving skills and coding techniques",
-    ],
-  },
-  {
-    title: "Trainee - Full Stack Development with Django",
-    company: "Information Technology Institute (ITI)",
-    period: "August 2024 - September 2024",
-    location: "Remote",
-    description: [
-      "Developing with Django and building data-driven applications",
-      "Working with Python, HTML5, JavaScript, CSS3, and Django REST Framework",
-      "Gaining experience in full-stack development and web application design",
     ],
   },
 ]
@@ -146,16 +158,16 @@ export default function Qualification() {
           </div>
         </div>
 
-        {/* Trainings & Internships Section */}
+        { }
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-2 mb-8">
-            <BookOpenCheck className="w-7 h-7 text-gray-800" />
-            <span className="text-xl font-semibold text-gray-900">Trainings & Internships</span>
+            <MdOutlineVolunteerActivism className="w-7 h-7 text-gray-800" />
+            <span className="text-xl font-semibold text-gray-900">Volunteering</span>
           </div>
           <div className="relative">
             <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200"></div>
             <div className="space-y-12">
-              {trainingsAndInternsList.map((exp, index) => (
+              {volunteeringList.map((exp, index) => (
                 <div key={index} className="relative pl-12 group">
                   <div className="absolute left-3 top-2 w-3 h-3 bg-gray-900 rounded-full border-4 border-white group-hover:scale-110 transition-transform"></div>
                   <h3 className="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
