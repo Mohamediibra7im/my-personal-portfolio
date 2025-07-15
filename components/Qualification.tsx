@@ -14,7 +14,7 @@ const educationList = [
 
 const experienceList = [
   {
-    title: "Trainee - Full Stack .NetWeb Development Internship",
+    title: "Trainee - Full Stack .Net Web Development Internship",
     company: "Digital Egypt Pioneers Initiative (DEPI)",
     period: "November 2024 - May 2025",
     location: "Hybrid",
