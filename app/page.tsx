@@ -16,7 +16,7 @@ export default function Home() {
       <AOSInit />
       <Header />
       <main className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-      <section id="hero" className="pt-12">
+      <section id="hero" className="py-3 lg:py-32">
         <Hero />
       </section>
       <section id="about" data-aos="fade-up">
