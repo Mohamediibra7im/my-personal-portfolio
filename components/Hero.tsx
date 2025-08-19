@@ -1,7 +1,8 @@
 import Image from "next/image"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
-import { SiCodeforces, SiLeetcode, } from "react-icons/si";
-import { FaHackerrank } from "react-icons/fa";
+import { SiCodeforces, SiLeetcode} from "react-icons/si";
+import { FaHackerrank} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Hero() {
   return (
@@ -41,6 +42,12 @@ export default function Hero() {
                 title: "LinkedIn",
                 icon: <Linkedin className="h-5 w-5 sm:h-6 sm:w-6 group-hover:scale-110 transition-transform" />,
                 hoverBg: "hover:bg-[#0A66C2]",
+              },
+              {
+                href: "https://x.com/M7amed_iibrahim",
+                title: "XTwitter",
+                icon: <FaXTwitter className="h-5 w-5 sm:h-6 sm:w-6 group-hover:scale-110 transition-transform" />,
+                hoverBg: "hover:bg-[#1DA1F2]",
               },
               {
                 href: "mailto:mohammed.iibrahim.omar@gmail.com",
