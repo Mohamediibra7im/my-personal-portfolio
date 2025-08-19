@@ -2,6 +2,7 @@ import { Github, Linkedin} from "lucide-react";
 import Image from "next/image";
 import { SiCodeforces, SiLeetcode } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -25,6 +26,12 @@ export default function Footer() {
                   <Linkedin className="h-5 w-5 sm:h-6 sm:w-6 group-hover:scale-110 transition-transform" />
                 ),
                 hoverBg: "hover:bg-[#0A66C2]",
+              },
+              {
+                href: "https://x.com/M7amed_iibrahim",
+                title: "XTwitter",
+                icon: <FaXTwitter className="h-5 w-5 sm:h-6 sm:w-6 group-hover:scale-110 transition-transform" />,
+                hoverBg: "hover:bg-[#1DA1F2]",
               },
               {
                 href: "https://codeforces.com/profile/MIDORIYA_",
@@ -78,7 +85,9 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          <p className="mt-6 text-gray-600">© 2025 Mohammed Ibrahim. All rights reserved.</p>
+            <p className="mt-6 text-gray-500 text-sm">
+            &copy; {new Date().getFullYear()} Mohammed Ibrahim. All rights reserved.
+            </p>
         </div>
       </div>
     </footer>

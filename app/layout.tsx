@@ -1,15 +1,15 @@
 import "./globals.css"
-import { Inter } from "next/font/google"
+import { Playpen_Sans } from "next/font/google"
 import type React from "react"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const inter = Inter({ subsets: ["latin"] })
+const playpenSansArabic = Playpen_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Mohammed Ibrahim - Portfolio",
-  description: "Personal portfolio showcasing my skills and projects",
+  description: "My personal portfolio showcasing my skills and projects as a full-stack Software Engineer.",
 }
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>{children}
+      <body className={playpenSansArabic.className}>{children}
         <Analytics />
         <SpeedInsights />
       </body>
