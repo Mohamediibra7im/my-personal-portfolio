@@ -71,6 +71,17 @@ const volunteeringList = [
     ],
   },
   {
+    title: "CO-Head of Scientific Committee",
+    company: "HNU-FCSIT Student Union",
+    period: "December 2024 - Present",
+    location: "Hybrid",
+    description: [
+      "Organizing and managing scientific events, workshops, and seminars for students",
+      "Collaborating with faculty members and external experts to enhance the academic experience",
+      "Promoting a culture of learning and innovation within the student community",
+    ],
+  },
+  {
     title: "Academic Coordinator",
     company: "Summarize Team",
     period: "January 2024 - February 2025",
