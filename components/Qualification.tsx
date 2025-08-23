@@ -17,7 +17,7 @@ const experienceList = [
     title: "Trainee - Full Stack .Net Web Development Internship",
     company: "Digital Egypt Pioneers Initiative (DEPI)",
     period: "November 2024 - May 2025",
-    location: "Hybrid",
+    location: "Cairo, Egypt (Hybrid)",
     description: [
       "Developing with .NET technologies and building data-driven applications",
       "Working with C#, HTML5, JavaScript, CSS3, and .NET Core Web API",
@@ -28,7 +28,7 @@ const experienceList = [
     title: "Trainee - Full Stack Development with Python",
     company: "Information Technology Institute (ITI)",
     period: "August 2024 - September 2024",
-    location: "Remote",
+    location: "Cairo, Egypt (Remote)",
     description: [
       "Developing with Django and building data-driven applications",
       "Working with Python, HTML5, JavaScript, CSS3, and Django REST Framework",
@@ -39,7 +39,7 @@ const experienceList = [
     title: "Trainee - Competitive Programming Internship",
     company: "IEEE Delta Academy",
     period: "November 2024 - February 2025",
-    location: "Remote",
+    location: "Cairo, Egypt (Remote)",
     description: [
       "Participating in competitive programming training sessions and contests",
       "Learning algorithms and data structures to solve complex problems efficiently",
@@ -50,7 +50,7 @@ const experienceList = [
     title: "Trainee - Level 2 Problem Solving Training",
     company: "Coach Academy",
     period: "July 2024 - October 2024",
-    location: "Remote",
+    location: "Cairo, Egypt (Remote)",
     description: [
       "This training includes hands-on experience in competitive programming, focusing on problem-solving and optimization techniques to enhance performance in programming competitions"
     ],
@@ -63,7 +63,7 @@ const volunteeringList = [
     title: "Vice President & Head of Technical Committee",
     company: "HNU-FCSIT ICPC Community",
     period: "December 2024 - Present",
-    location: "Hybrid",
+    location: "Cairo, Egypt (Hybrid)",
     description: [
       "Assisting the President in overseeing the organization's operations",
       "Managing the technical aspects of the ICPC",
@@ -74,7 +74,7 @@ const volunteeringList = [
     title: "CO-Head of Scientific Committee",
     company: "HNU-FCSIT Student Union",
     period: "December 2024 - Present",
-    location: "Hybrid",
+  location: "Cairo, Egypt (Hybrid)",
     description: [
       "Organizing and managing scientific events, workshops, and seminars for students",
       "Collaborating with faculty members and external experts to enhance the academic experience",
@@ -85,7 +85,7 @@ const volunteeringList = [
     title: "Academic Coordinator",
     company: "Summarize Team",
     period: "January 2024 - February 2025",
-    location: "Cairo, Egypt",
+    location: "Cairo, Egypt (Hybrid)",
     description: [
       "Advising students on academic matters, including course selection, academic performance, and career guidance.",
     ],
@@ -94,7 +94,7 @@ const volunteeringList = [
     title: "Head of Researchers",
     company: "Triple-S Cairo branch",
     period: "November 2023 - February 2024",
-    location: "Cairo, Egypt",
+    location: "Cairo, Egypt (Hybrid)",
     description: [
       "Leading and managing the research team, which includes hiring, mentoring, and evaluating researchers.",
       "Managing the resources allocated to research, including budgets, equipment, and facilities.",
