@@ -1,10 +1,12 @@
-import { Code, Puzzle, Database, Globe, Server, PenToolIcon as Tool, Users } from "lucide-react"
+import { Puzzle, Database, Globe, Server, PenToolIcon as Tool, Users } from "lucide-react"
+import { IoCodeSlash } from "react-icons/io5";
+import { FaComputer } from "react-icons/fa6";
 import { SectionTitle } from "./ui/section-title";
 
 const skillCategories = [
   {
     title: "Programming Languages",
-    icon: Code,
+    icon: IoCodeSlash,
     skills: ["C", "C++", "C#", "LINQ", "Python", "Java", "Go", "SQL"],
   },
   {
@@ -41,6 +43,11 @@ const skillCategories = [
     title: "Tools & IDEs",
     icon: Tool,
     skills: ["Git & GitHub", "Visual Studio", "VS Code", "Codeblocks", "CLion", "PyCharm", "LaTeX", "Figma", "Postman", "Swagger"],
+  },
+  {
+    title: "Operating Systems",
+    icon: FaComputer,
+    skills: ["Windows", "Linux", "Ubuntu"],
   },
   {
     title: "Soft Skills",
