@@ -14,7 +14,7 @@ import "aos/dist/aos.css"
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-b from-white via-gray-100 to-gray-10 min-h-screen flex flex-col">
+    <div className="bg-gradient-to-b from-white via-gray-100 to-gray-200 min-h-screen flex flex-col">
       <Progress />
       <Cursor />
       <AOSInit />
