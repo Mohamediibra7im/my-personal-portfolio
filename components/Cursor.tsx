@@ -24,9 +24,25 @@ const Cursor = () => {
         };
     }, [cursorX, cursorY]);
 
+    const [showCursor, setShowCursor] = React.useState(true);
+    useEffect(() => {
+        const checkScreen = () => {
+            const shouldShow = window.innerWidth >= 768;
+            setShowCursor(shouldShow);
+            document.body.style.cursor = shouldShow ? 'none' : '';
+        };
+        checkScreen();
+        window.addEventListener('resize', checkScreen);
+        return () => {
+            window.removeEventListener('resize', checkScreen);
+            document.body.style.cursor = '';
+        };
+    }, []);
+    
+    if (!showCursor) return null;
     return (
         <motion.div
-            className="cursor md:fixed md:block hidden z-[51] pointer-events-none  rounded-full bg-white mix-blend-difference w-12 h-12 md:w-14 md:h-14"
+            className="cursor fixed block z-[51] pointer-events-none rounded-full bg-white mix-blend-difference w-12 h-12 md:w-14 md:h-14"
             style={{
                 translateX: cursorXSpring,
                 translateY: cursorYSpring,
