@@ -17,22 +17,12 @@ const skillCategories = [
   {
     title: "Frontend Development",
     icon: Globe,
-    skills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "Tailwind CSS",
-      "Bootstrap",
-      "SASS",
-      "React",
-      "Next.js",
-    ],
+    skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS", "Bootstrap", "SASS", "Angular", "React", "Next.js", "Framer Motion"],
   },
   {
     title: "Backend Development",
     icon: Server,
-    skills: ["ASP.NET Core", "Django", "Flask", "RESTful APIs", "Node.js"],
+    skills: ["ASP.NET Core", "Django", "Flask", "RESTful APIs", "Node.js", "Express.js"],
   },
   {
     title: "Databases Technologies",
