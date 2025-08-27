@@ -15,7 +15,7 @@ interface Project {
 export const projects: Project[] = [
   {
     name: "Personal Portfolio",
-    description:"A personal portfolio website showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS for a responsive design.",
+    description: "A personal portfolio website showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS for a responsive design.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMToAX6tHsIRJglXdvZDBSsVL8NptFnijwCbGu",
     demoLink: "https://mohamed-ibrahim-omar.vercel.app",
     githubLink: "https://github.com/Mohamediibra7im/new-port",
@@ -24,7 +24,7 @@ export const projects: Project[] = [
   },
   {
     name: "Collage Management System",
-    description:"CMS is a web application that simplifies and automates academic and administrative tasks, improving efficiency and offering an easy-to-use interface for students, faculty, and administrators.",
+    description: "CMS is a web application that simplifies and automates academic and administrative tasks, improving efficiency and offering an easy-to-use interface for students, faculty, and administrators.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMgzzigE5YV8UEhCTJjONdpB3zebFWKvI2ywxi",
     demoLink: "#",
     githubLink: "https://github.com/Collage-Management-System",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
   },
   {
     name: "CF-Problem Scraper",
-    description:"A Python application that scrapes Codeforces for problem data, allowing users to search and filter problems based on difficulty, tags, and more. Features a GUI built with PyQt5.",
+    description: "A Python application that scrapes Codeforces for problem data, allowing users to search and filter problems based on difficulty, tags, and more. Features a GUI built with PyQt5.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMyNGGM797TUs6cnz3kjxt2DgZSNiA0o9KXm4h",
     demoLink: "https://lnkd.in/dsgK-gci",
     githubLink: "https://github.com/Mohamediibra7im/CF-Problem-Scraper",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
   },
   {
     name: "FCFS Scheduling Calculator",
-    description:"A web-based calculator for First-Come, First-Served (FCFS) scheduling algorithm. It allows users to input process details and calculates waiting time, turnaround time, and average waiting time.",
+    description: "A web-based calculator for First-Come, First-Served (FCFS) scheduling algorithm. It allows users to input process details and calculates waiting time, turnaround time, and average waiting time.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMYBBY5Fyfz6Mm2PYwX1GIl8K0pg7hWVdBZy3N",
     demoLink: "https://fcfs-scheduling-calculator.vercel.app/",
     githubLink: "https://github.com/Mohamediibra7im/FCFS-Scheduling-Calculator",
@@ -52,17 +52,17 @@ export const projects: Project[] = [
   {
     name: "N Puzzle Solver",
     description:
-    "A Python-based N puzzle solver using Best First search algorithm and heuristics. It provides a GUI for user interaction and visualizes the solving process.",
+      "A Python-based N puzzle solver using Best First search algorithm and heuristics. It provides a GUI for user interaction and visualizes the solving process.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMEtCJ3tIUnNYb4i5CeGA81RtDg3L9r7hPFwK0",
     demoLink: "#",
     githubLink: "https://github.com/Mohamediibra7im/N-Puzzle-Game",
-    technologies: ["Python", "OOP","PyQt5", "Search Algorithms", "Heuristics"],
+    technologies: ["Python", "OOP", "PyQt5", "Search Algorithms", "Heuristics"],
     status: "Completed",
   },
   {
     name: "Event Management System",
     description:
-    "A Java-based event management system with features for event creation, registration, and ticketing. Utilizes JavaFX for the GUI and text files for data storage.",
+      "A Java-based event management system with features for event creation, registration, and ticketing. Utilizes JavaFX for the GUI and text files for data storage.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMgDbxGI5YV8UEhCTJjONdpB3zebFWKvI2ywxi",
     demoLink: "#",
     githubLink: "https://github.com/Mohamediibra7im/Event-Management-System",
@@ -82,41 +82,11 @@ export const projects: Project[] = [
   {
     name: "E-commerce Platform",
     description:
-      "A full-stack e-commerce platform built with Django and React. It features user authentication, product management, and a shopping cart system.",
+      "A full-stack e-commerce platform built with the MERN stack. It features user authentication, product management, and a shopping cart system.",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMcko9WzNkRhuDOr7WMXlTdm6LQ9xSJ83v1f2j",
     demoLink: "#",
     githubLink: "#",
-    technologies: ["Django", "React", "PostgreSQL", "Tailwind CSS"],
-    status: "still working",
-  },
-  {
-    name: "Weather Application",
-    description:
-      "A responsive weather application using React and OpenWeatherMap API. It provides real-time weather information, forecasts, and location-based services.",
-    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMlaTfEyLoR1OPV9X5uQF6KS2Nb07TndEwBGvp",
-    demoLink: "#",
-    githubLink: "#",
-    technologies: ["React", "OpenWeatherMap API", "Geolocation API", "Tailwind CSS"],
-    status: "still working",
-  },
-  {
-    name: "Task Management System",
-    description:
-      "A comprehensive task management system with features like task creation, assignment, progress tracking, and team collaboration tools.",
-    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMrC5ni9fzWN9TU3Vd0gvfMxOqa1CRD8I64tH2",
-    demoLink: "#",
-    githubLink: "#",
-    technologies: [".NET Core", "React", "MongoDB", "Tilwind CSS"],
-    status: "still working",
-  },
-  {
-    name: "Todo List Application",
-    description:
-      "A feature-rich Todo list application built with React and TypeScript. Includes task prioritization, due dates, and local storage persistence.",
-    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMreCLcsNfzWN9TU3Vd0gvfMxOqa1CRD8I64tH",
-    demoLink: "#",
-    githubLink: "#",
-    technologies: ["React", "TypeScript", "LocalStorage API", "Tailwind CSS"],
+    technologies: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS", "TypeScript"],
     status: "still working",
   },
 ];
@@ -136,9 +106,8 @@ export default function Projects() {
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transform group-hover:scale-110 transition-transform duration-500"
+                  fill
+                  className="object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
