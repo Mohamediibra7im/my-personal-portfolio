@@ -71,16 +71,12 @@ export default function Header() {
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-transparent dark:from-transparent dark:via-gray-700/20 dark:to-transparent rounded-2xl"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-amber-400/5 via-transparent to-blue-400/5 dark:from-amber-400/3 dark:via-transparent dark:to-blue-400/3 rounded-2xl"></div>
               <div className="relative space-y-1 xs:space-y-2">
-                {navigation.map((link, index) => (
+                {navigation.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
-                    className="group block px-3 xs:px-4 py-2.5 xs:py-3 text-sm xs:text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-100/80 hover:to-gray-50/80 dark:hover:from-gray-800/80 dark:hover:to-gray-700/80 hover:shadow-md hover:scale-[1.02] transform"
+                    className={`group block px-3 xs:px-4 py-2.5 xs:py-3 text-sm xs:text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-100/80 hover:to-gray-50/80 dark:hover:from-gray-800/80 dark:hover:to-gray-700/80 hover:shadow-md hover:scale-[1.02] transform ${mobileMenuOpen ? 'animate-slideIn' : ''}`}
                     onClick={() => setMobileMenuOpen(false)}
-                    style={{
-                      animationDelay: `${index * 50}ms`,
-                      animation: mobileMenuOpen ? 'slideInFromTop 0.3s ease-out forwards' : 'none'
-                    }}
                   >
                     <div className="flex items-center justify-between">
                       <span>{link.name}</span>
