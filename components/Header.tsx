@@ -65,19 +65,30 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden">
             <div
-              className={`pt-2 pb-3 space-y-1 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-xl shadow-lg mx-2 mt-2 transition-all duration-300 ease-in-out transform ${mobileMenuOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+              className={`relative bg-gradient-to-br from-white/95 to-gray-50/95 dark:from-gray-900/95 dark:to-gray-800/95 backdrop-blur-xl border border-gray-200/50 dark:border-gray-600/30 rounded-2xl shadow-2xl mx-2 mt-3 p-4 transition-all duration-500 ease-out transform ${mobileMenuOpen ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 translate-y-2 pointer-events-none"
                 }`}
             >
-              {navigation.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-lg transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              ))}
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-transparent dark:from-transparent dark:via-gray-700/20 dark:to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-400/5 via-transparent to-blue-400/5 dark:from-amber-400/3 dark:via-transparent dark:to-blue-400/3 rounded-2xl"></div>
+              <div className="relative space-y-2">
+                {navigation.map((link, index) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="group block px-4 py-3 text-base font-medium text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded-xl transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-100/80 hover:to-gray-50/80 dark:hover:from-gray-800/80 dark:hover:to-gray-700/80 hover:shadow-md hover:scale-[1.02] transform"
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{
+                      animationDelay: `${index * 50}ms`,
+                      animation: mobileMenuOpen ? 'slideInFromTop 0.3s ease-out forwards' : 'none'
+                    }}
+                  >
+                    <div className="flex items-center justify-between">
+                      <span>{link.name}</span>
+                      <div className="w-0 group-hover:w-2 h-0.5 bg-gradient-to-r from-amber-400 to-blue-400 dark:from-amber-300 dark:to-blue-300 transition-all duration-300 rounded-full"></div>
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         )}
