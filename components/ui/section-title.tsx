@@ -21,18 +21,18 @@ export function SectionTitle({
   }[align]
 
   return (
-    <div className={clsx("flex flex-col mb-16", alignment, className)}>
-      <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-3 tracking-tight leading-tight">
+    <div className={clsx("flex flex-col mb-12 xs:mb-14 sm:mb-16", alignment, className)}>
+      <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-2 xs:mb-3 tracking-tight leading-tight">
         {children}
       </h2>
       {subtitle && (
-        <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mt-1 mb-2">
+        <p className="text-base xs:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mt-1 mb-2">
           {subtitle}
         </p>
       )}
       <div
         className={clsx(
-          "mt-4 w-16 h-1 rounded-full transition-all duration-300",
+          "mt-3 xs:mt-4 w-12 xs:w-16 h-0.5 xs:h-1 rounded-full transition-all duration-300",
           "bg-[#1B263B] dark:bg-gray-400"
         )}
       />

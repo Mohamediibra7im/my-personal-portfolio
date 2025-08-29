@@ -126,32 +126,32 @@ const certificates = [
 export default function Certificates() {
   return (
     <section id="certificates" className="py-16 sm:py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8">
         <SectionTitle subtitle="Professional Certifications">
           Certificates
         </SectionTitle>
-        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 xs:gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {certificates.map((cert, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between"
+              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 p-4 xs:p-5 sm:p-6 flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-gray-900 dark:text-white font-semibold">{cert.year}</span>
+                <div className="flex items-center justify-between mb-3 xs:mb-4">
+                  <span className="text-gray-900 dark:text-white font-semibold text-sm xs:text-base">{cert.year}</span>
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{cert.name}</h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">{cert.issuer}</p>
-                {cert.description && <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{cert.description}</p>}
+                <h3 className="text-base xs:text-lg font-bold text-gray-900 dark:text-white mb-2">{cert.name}</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-xs xs:text-sm mb-2">{cert.issuer}</p>
+                {cert.description && <p className="text-xs xs:text-sm text-gray-500 dark:text-gray-400 mb-3 xs:mb-4">{cert.description}</p>}
               </div>
               <a
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-3 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-xl hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors text-sm mt-auto"
+                className="inline-flex items-center justify-center px-2.5 xs:px-3 py-1.5 xs:py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-xl hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors text-xs xs:text-sm mt-auto"
               >
                 View Certificate
-                <ExternalLink className="ml-2 h-4 w-4" />
+                <ExternalLink className="ml-1.5 xs:ml-2 h-3 w-3 xs:h-4 xs:w-4" />
               </a>
             </div>
           ))}

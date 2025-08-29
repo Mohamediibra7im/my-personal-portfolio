@@ -19,7 +19,7 @@ export default function Home() {
       <Cursor />
       <AOSInit />
       <Header />
-      <main className="flex-1 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <main className="flex-1 max-w-6xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 space-y-8 xs:space-y-12 sm:space-y-16">
         <section id="hero" className="py-1 lg:py-32">
           <Hero />
         </section>

@@ -104,29 +104,29 @@ const volunteeringList = [
 
 export default function Qualification() {
   return (
-    <section id="qualifications" className="py-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="qualifications" className="py-16 sm:py-20">
+      <div className="container mx-auto px-3 xs:px-4 sm:px-6 lg:px-8">
         <SectionTitle subtitle="A snapshot of my academic and professional journey">
           Qualifications
         </SectionTitle>
 
         {/* Education Section */}
-        <div className="max-w-3xl mx-auto mb-20">
-          <div className="flex items-center gap-2 mb-8">
-            <GraduationCap className="w-7 h-7 text-gray-800 dark:text-gray-200" />
-            <span className="text-xl font-semibold text-gray-900 dark:text-white">Education</span>
+        <div className="max-w-3xl mx-auto mb-16 sm:mb-20">
+          <div className="flex items-center gap-2 mb-6 sm:mb-8">
+            <GraduationCap className="w-6 h-6 xs:w-7 xs:h-7 text-gray-800 dark:text-gray-200" />
+            <span className="text-lg xs:text-xl font-semibold text-gray-900 dark:text-white">Education</span>
           </div>
           <div className="relative">
-            <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700"></div>
-            <div className="space-y-12">
+            <div className="absolute left-3 xs:left-4 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700"></div>
+            <div className="space-y-8 xs:space-y-12">
               {educationList.map((edu, index) => (
-                <div key={index} className="relative pl-12 group">
-                  <div className="absolute left-3 top-2 w-3 h-3 bg-gray-900 dark:bg-gray-400 rounded-full border-4 border-white dark:border-gray-800 group-hover:scale-110 transition-transform"></div>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
+                <div key={index} className="relative pl-8 xs:pl-12 group">
+                  <div className="absolute left-2 xs:left-3 top-2 w-2.5 h-2.5 xs:w-3 xs:h-3 bg-gray-900 dark:bg-gray-400 rounded-full border-2 xs:border-4 border-white dark:border-gray-800 group-hover:scale-110 transition-transform"></div>
+                  <h3 className="text-base xs:text-lg font-bold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
                     {edu.degree}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">{edu.school}</p>
-                  <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  <p className="text-sm xs:text-base text-gray-700 dark:text-gray-300">{edu.school}</p>
+                  <div className="flex items-center gap-2 text-xs xs:text-sm text-gray-500 dark:text-gray-400 mt-1">
                     <span>{edu.year}</span>
                     <span className="hidden sm:inline">|</span>
                     <span className="hidden sm:inline">{edu.location}</span>
@@ -138,29 +138,29 @@ export default function Qualification() {
         </div>
 
         {/* Experience Section */}
-        <div className="max-w-3xl mx-auto mb-20">
-          <div className="flex items-center gap-2 mb-8">
-            <BriefcaseBusiness className="w-7 h-7 text-gray-800 dark:text-gray-200" />
-            <span className="text-xl font-semibold text-gray-900 dark:text-white">Experience</span>
+        <div className="max-w-3xl mx-auto mb-16 sm:mb-20">
+          <div className="flex items-center gap-2 mb-6 sm:mb-8">
+            <BriefcaseBusiness className="w-6 h-6 xs:w-7 xs:h-7 text-gray-800 dark:text-gray-200" />
+            <span className="text-lg xs:text-xl font-semibold text-gray-900 dark:text-white">Experience</span>
           </div>
           <div className="relative">
-            <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700"></div>
-            <div className="space-y-12">
+            <div className="absolute left-3 xs:left-4 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700"></div>
+            <div className="space-y-8 xs:space-y-12">
               {experienceList.map((exp, index) => (
-                <div key={index} className="relative pl-12 group">
-                  <div className="absolute left-3 top-2 w-3 h-3 bg-gray-900 dark:bg-gray-400 rounded-full border-4 border-white dark:border-gray-800 group-hover:scale-110 transition-transform"></div>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
+                <div key={index} className="relative pl-8 xs:pl-12 group">
+                  <div className="absolute left-2 xs:left-3 top-2 w-2.5 h-2.5 xs:w-3 xs:h-3 bg-gray-900 dark:bg-gray-400 rounded-full border-2 xs:border-4 border-white dark:border-gray-800 group-hover:scale-110 transition-transform"></div>
+                  <h3 className="text-base xs:text-lg font-bold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
                     {exp.title}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">{exp.company}</p>
-                  <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  <p className="text-sm xs:text-base text-gray-700 dark:text-gray-300">{exp.company}</p>
+                  <div className="flex items-center gap-2 text-xs xs:text-sm text-gray-500 dark:text-gray-400 mt-1">
                     <span>{exp.period}</span>
                     <span className="hidden sm:inline">|</span>
                     <span className="hidden sm:inline">{exp.location}</span>
                   </div>
                   <ul className="mt-2 list-disc list-inside text-gray-600 dark:text-gray-400 space-y-1">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="text-sm">{item}</li>
+                      <li key={i} className="text-xs xs:text-sm">{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -169,30 +169,30 @@ export default function Qualification() {
           </div>
         </div>
 
-        { }
+        {/* Volunteering Section */}
         <div className="max-w-3xl mx-auto">
-          <div className="flex items-center gap-2 mb-8">
-            <MdOutlineVolunteerActivism className="w-7 h-7 text-gray-800 dark:text-gray-200" />
-            <span className="text-xl font-semibold text-gray-900 dark:text-white">Volunteering</span>
+          <div className="flex items-center gap-2 mb-6 sm:mb-8">
+            <MdOutlineVolunteerActivism className="w-6 h-6 xs:w-7 xs:h-7 text-gray-800 dark:text-gray-200" />
+            <span className="text-lg xs:text-xl font-semibold text-gray-900 dark:text-white">Volunteering</span>
           </div>
           <div className="relative">
-            <div className="absolute left-4 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700"></div>
-            <div className="space-y-12">
+            <div className="absolute left-3 xs:left-4 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700"></div>
+            <div className="space-y-8 xs:space-y-12">
               {volunteeringList.map((exp, index) => (
-                <div key={index} className="relative pl-12 group">
-                  <div className="absolute left-3 top-2 w-3 h-3 bg-gray-900 dark:bg-gray-400 rounded-full border-4 border-white dark:border-gray-800 group-hover:scale-110 transition-transform"></div>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
+                <div key={index} className="relative pl-8 xs:pl-12 group">
+                  <div className="absolute left-2 xs:left-3 top-2 w-2.5 h-2.5 xs:w-3 xs:h-3 bg-gray-900 dark:bg-gray-400 rounded-full border-2 xs:border-4 border-white dark:border-gray-800 group-hover:scale-110 transition-transform"></div>
+                  <h3 className="text-base xs:text-lg font-bold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
                     {exp.title}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">{exp.company}</p>
-                  <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  <p className="text-sm xs:text-base text-gray-700 dark:text-gray-300">{exp.company}</p>
+                  <div className="flex items-center gap-2 text-xs xs:text-sm text-gray-500 dark:text-gray-400 mt-1">
                     <span>{exp.period}</span>
                     <span className="hidden sm:inline">|</span>
                     <span className="hidden sm:inline">{exp.location}</span>
                   </div>
                   <ul className="mt-2 list-disc list-inside text-gray-600 dark:text-gray-400 space-y-1">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="text-sm">{item}</li>
+                      <li key={i} className="text-xs xs:text-sm">{item}</li>
                     ))}
                   </ul>
                 </div>
