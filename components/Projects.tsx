@@ -100,7 +100,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col"
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col"
             >
               <div className="relative h-48 sm:h-64 overflow-hidden">
                 <Image
@@ -111,13 +111,13 @@ export default function Projects() {
                 />
               </div>
               <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-gray-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
                   {project.name}
                 </h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
-                    <span key={i} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
+                    <span key={i} className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-200 text-xs rounded-full">
                       {tech}
                     </span>
                   ))}
@@ -129,7 +129,7 @@ export default function Projects() {
                         href={project.demoLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-xl hover:bg-gray-800 transition-colors"
+                        className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-gray-900 dark:bg-gray-700 rounded-xl hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors"
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Demo
@@ -140,14 +140,14 @@ export default function Projects() {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium border border-gray-900 text-gray-900 rounded-xl hover:bg-gray-100 transition-colors"
+                        className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium border border-gray-900 dark:border-gray-400 text-gray-900 dark:text-gray-100 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
                       >
                         <Github className="w-4 h-4 mr-2" />
                         Code
                       </a>
                     )}
                     {project.status.toLowerCase() === "still working" && (
-                      <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-500 bg-gray-100 rounded-xl">
+                      <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 rounded-xl">
                         <svg
                           className="w-4 h-4 mr-2 animate-spin"
                           xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +172,7 @@ export default function Projects() {
                       </span>
                     )}
                     {project.status.toLowerCase() === "completed" && (
-                      <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-green-600 bg-green-100 rounded-xl">
+                      <span className="inline-flex items-center px-3 py-2 text-sm font-medium text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/20 rounded-xl">
                         <svg
                           className="w-4 h-4 mr-2"
                           xmlns="http://www.w3.org/2000/svg"

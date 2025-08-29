@@ -1,4 +1,4 @@
-import { Github, Linkedin} from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { SiCodeforces, SiLeetcode } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa";
@@ -77,7 +77,7 @@ export default function Footer() {
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className={`group text-gray-600 hover:text-white transition-all duration-200 bg-gray-100 ${hoverBg} rounded-full p-2 sm:p-2.5 shadow hover:shadow-lg flex items-center justify-center`}
+                className={`group text-gray-600 dark:text-gray-300 hover:text-white transition-all duration-200 bg-gray-100 dark:bg-gray-800 ${hoverBg} rounded-full p-2 sm:p-2.5 shadow hover:shadow-lg flex items-center justify-center`}
                 title={title}
                 aria-label={title}
               >
@@ -85,9 +85,9 @@ export default function Footer() {
               </a>
             ))}
           </div>
-            <p className="mt-6 text-gray-500 text-sm">
+          <p className="mt-6 text-gray-500 dark:text-gray-400 text-sm">
             &copy; {new Date().getFullYear()} Mohammed Ibrahim. All rights reserved.
-            </p>
+          </p>
         </div>
       </div>
     </footer>

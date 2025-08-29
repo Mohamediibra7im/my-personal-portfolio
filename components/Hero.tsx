@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
-import { SiCodeforces, SiLeetcode} from "react-icons/si";
-import { FaHackerrank} from "react-icons/fa";
+import { SiCodeforces, SiLeetcode } from "react-icons/si";
+import { FaHackerrank } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Hero() {
@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="pt-32 pb-16">
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="order-2 md:order-1">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
             Mohamed Ibrahim
             <Image
               src="https://camo.githubusercontent.com/d552948e7884c41fde2d32b9221d79f0df2076c7d824aaab954ca93f53d95884/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966"
@@ -20,15 +20,15 @@ export default function Hero() {
               unoptimized
             />
           </h1>
-            <div className="mb-6">
-            <p className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-2">
+          <div className="mb-6">
+            <p className="text-2xl sm:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
               Full Stack Software Engineer
             </p>
-            <p className="text-lg sm:text-xl text-gray-600 flex items-center gap-2">
+            <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 flex items-center gap-2">
               <span>Competitive Programmer</span>
               <span className="inline-block animate-bounce text-yellow-500 text-2xl">🏆</span>
             </p>
-            </div>
+          </div>
           <div className="flex flex-wrap gap-3 mb-8 sm:gap-4">
             {[
               {
@@ -93,7 +93,7 @@ export default function Hero() {
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className={`group text-gray-600 hover:text-white transition-all duration-200 bg-gray-100 ${hoverBg} rounded-full p-2 sm:p-2.5 shadow hover:shadow-lg flex items-center justify-center`}
+                className={`group text-gray-600 dark:text-gray-300 hover:text-white transition-all duration-200 bg-gray-100 dark:bg-gray-800 ${hoverBg} rounded-full p-2 sm:p-2.5 shadow hover:shadow-lg flex items-center justify-center`}
                 title={title}
                 aria-label={title}
               >
@@ -103,14 +103,14 @@ export default function Hero() {
           </div>
           <a
             href="#contact"
-            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white font-semibold rounded-full shadow-lg hover:from-gray-800 hover:to-gray-900 transition-all duration-200 group"
+            className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 dark:from-gray-700 dark:via-gray-600 dark:to-gray-500 text-white font-semibold rounded-full shadow-lg hover:from-gray-800 hover:to-gray-900 dark:hover:from-gray-600 dark:hover:to-gray-700 transition-all duration-200 group"
           >
             Contact Me
             <ArrowRight className="ml-3 h-5 w-5 transform group-hover:translate-x-1 transition-transform duration-200" />
           </a>
         </div>
         <div className="order-1 md:order-2 flex flex-col justify-center items-center relative">
-          <div className="relative w-80 h-80 md:w-96 md:h-96 sm:w-96 sm:h-96 rounded-full shadow-2xl bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 overflow-hidden border-8 border-white dark:border-gray-800 transition-all duration-300 group">
+          <div className="relative w-80 h-80 md:w-96 md:h-96 sm:w-96 sm:h-96 rounded-full shadow-2xl bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 overflow-hidden border-8 border-white dark:border-gray-800 transition-all duration-300 group">
             <Image
               src="https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFM720fbbzwX8O5q2kPK0pYDfbroUj1CilQWIvT"
               alt="Mohammed Ibrahim"
@@ -120,7 +120,7 @@ export default function Hero() {
               priority
             />
           </div>
-            <div className="mt-4 flex items-center gap-3">
+          <div className="mt-4 flex items-center gap-3">
             <span className="relative flex h-3 w-3">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500 border-2 border-white dark:border-gray-800"></span>
@@ -128,7 +128,7 @@ export default function Hero() {
             <span className="text-sm text-gray-700 dark:text-gray-300 font-medium">
               Open to new opportunities
             </span>
-            </div>
+          </div>
         </div>
       </div>
     </section>

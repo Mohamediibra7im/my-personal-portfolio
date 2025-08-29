@@ -4,6 +4,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { ThemeProvider } from "next-themes"
 
 const playpenSansArabic = Playpen_Sans({ subsets: ["latin"] })
 
@@ -18,10 +19,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={playpenSansArabic.className}>{children}
-        <Analytics />
-        <SpeedInsights />
+    <html lang="en" suppressHydrationWarning className="scroll-smooth">
+      <body className={playpenSansArabic.className}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          {children}
+          <Analytics />
+          <SpeedInsights />
+        </ThemeProvider>
       </body>
     </html>
   )

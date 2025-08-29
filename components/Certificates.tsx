@@ -134,24 +134,24 @@ export default function Certificates() {
           {certificates.map((cert, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between"
+              className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 p-6 flex flex-col justify-between"
             >
               <div>
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-gray-900 font-semibold">{cert.year}</span>
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">{cert.name}</h3>
-              <p className="text-gray-600 text-sm mb-2">{cert.issuer}</p>
-              {cert.description && <p className="text-sm text-gray-500 mb-4">{cert.description}</p>}
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-gray-900 dark:text-white font-semibold">{cert.year}</span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">{cert.name}</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">{cert.issuer}</p>
+                {cert.description && <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">{cert.description}</p>}
               </div>
               <a
-              href={cert.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-3 py-2 bg-gray-900 text-white rounded-xl hover:bg-gray-800 transition-colors text-sm mt-auto"
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-3 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-xl hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors text-sm mt-auto"
               >
-              View Certificate
-              <ExternalLink className="ml-2 h-4 w-4" />
+                View Certificate
+                <ExternalLink className="ml-2 h-4 w-4" />
               </a>
             </div>
           ))}

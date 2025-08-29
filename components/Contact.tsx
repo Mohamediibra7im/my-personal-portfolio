@@ -21,19 +21,19 @@ export default function Contact() {
       <SectionTitle subtitle="Get in touch">Contact</SectionTitle>
       <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto px-4">
         <div>
-          <h3 className="text-lg font-medium text-gray-900 mb-6">Contact Information</h3>
+          <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-6">Contact Information</h3>
           <div className="space-y-6">
             <div className="group">
               <div className="flex items-center space-x-4">
                 <Mail
                   className={cn(
-                    "h-5 w-5 text-gray-600 transition-all duration-300 ease-in-out",
-                    "group-hover:text-gray-900 group-hover:scale-110",
+                    "h-5 w-5 text-gray-600 dark:text-gray-400 transition-all duration-300 ease-in-out",
+                    "group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110",
                   )}
                 />
                 <div>
-                  <p className="font-medium text-gray-900">Email</p>
-                  <a href="mailto:mohammed.iibrahim.omar@gmail.com" className="text-gray-600 hover:text-gray-900">
+                  <p className="font-medium text-gray-900 dark:text-white">Email</p>
+                  <a href="mailto:mohammed.iibrahim.omar@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                     mohammed.iibrahim.omar@gmail.com
                   </a>
                 </div>
@@ -43,13 +43,13 @@ export default function Contact() {
               <div className="flex items-center space-x-4">
                 <Phone
                   className={cn(
-                    "h-5 w-5 text-gray-600 transition-all duration-300 ease-in-out",
-                    "group-hover:text-gray-900 group-hover:scale-110",
+                    "h-5 w-5 text-gray-600 dark:text-gray-400 transition-all duration-300 ease-in-out",
+                    "group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110",
                   )}
                 />
                 <div>
-                  <p className="font-medium text-gray-900">Phone</p>
-                  <a href="tel:+201101873008" className="text-gray-600 hover:text-gray-900">
+                  <p className="font-medium text-gray-900 dark:text-white">Phone</p>
+                  <a href="tel:+201101873008" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                     +20 110 187 3008
                   </a>
                 </div>
@@ -59,27 +59,27 @@ export default function Contact() {
               <div className="flex items-center space-x-4">
                 <MapPin
                   className={cn(
-                    "h-5 w-5 text-gray-600 transition-all duration-300 ease-in-out",
-                    "group-hover:text-gray-900 group-hover:scale-110",
+                    "h-5 w-5 text-gray-600 dark:text-gray-400 transition-all duration-300 ease-in-out",
+                    "group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110",
                   )}
                 />
                 <div>
-                  <p className="font-medium text-gray-900">Location</p>
-                  <p className="text-gray-600">Giza, Egypt</p>
+                  <p className="font-medium text-gray-900 dark:text-white">Location</p>
+                  <p className="text-gray-600 dark:text-gray-300">Giza, Egypt</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <h3 className="text-lg font-medium text-gray-900 mb-6">Send me a message</h3>
+          <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-6">Send me a message</h3>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="w-full px-4 py-3 border rounded-xl border-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                className="w-full px-4 py-3 border rounded-xl border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-400 focus:border-transparent"
                 required
               />
             </div>
@@ -88,7 +88,7 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                className="w-full px-4 py-3 border border-gray-200 focus:outline-none rounded-xl focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:outline-none rounded-xl focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-400 focus:border-transparent"
                 required
               />
             </div>
@@ -97,14 +97,14 @@ export default function Contact() {
                 name="message"
                 placeholder="Your Message"
                 rows={4}
-                className="w-full px-4 py-3 border border-gray-200 focus:outline-none rounded-xl focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white focus:outline-none rounded-xl focus:ring-2 focus:ring-gray-900 dark:focus:ring-gray-400 focus:border-transparent"
                 required
               />
             </div>
             <div>
               <button
                 type="submit"
-                className="w-full px-4 py-3 bg-gray-900 text-white hover:bg-gray-800 rounded-xl transition-colors"
+                className="w-full px-4 py-3 bg-gray-900 dark:bg-gray-700 text-white hover:bg-gray-800 dark:hover:bg-gray-600 rounded-xl transition-colors"
               >
                 Send Message
               </button>
