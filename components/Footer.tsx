@@ -61,13 +61,22 @@ export default function Footer() {
                 href: "https://atcoder.jp/users/Midoriya_Izuku",
                 title: "AtCoder",
                 icon: (
-                  <Image
-                    width={24}
-                    height={24}
-                    src="https://img.atcoder.jp/assets/top/img/logo_bk.svg"
-                    alt="AtCoder"
-                    className="h-5 w-5 sm:h-6 sm:w-6 group-hover:scale-110 transition-transform"
-                  />
+                  <>
+                    <Image
+                      width={20}
+                      height={20}
+                      src="https://img.atcoder.jp/assets/top/img/logo_bk.svg"
+                      alt="AtCoder"
+                      className="block dark:hidden h-4 w-4 xs:h-5 xs:w-5 sm:h-6 sm:w-6 group-hover:scale-110 transition-transform"
+                    />
+                    <Image
+                      width={20}
+                      height={20}
+                      src="https://img.atcoder.jp/logo/atcoder/logo_white.png"
+                      alt="AtCoder"
+                      className="hidden dark:block h-4 w-4 xs:h-5 xs:w-5 sm:h-6 sm:w-6 group-hover:scale-110 transition-transform"
+                    />
+                  </>
                 ),
                 hoverBg: "hover:bg-[#222]",
               },
