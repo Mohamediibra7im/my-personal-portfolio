@@ -33,7 +33,7 @@ export const projects: Project[] = [
     status: "Completed",
   },
   {
-    name: "CP-Training Tracker",
+    name: "CF-Training Tracker",
     description: "A Competitive Programming training tool to Master competitive programming with intelligent practice sessions, track your progress, and climb the Codeforces ladder. ",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFM2UvMh2JJPzYV5prtOjyasD6SmFHLKB18xcd0",
     demoLink: "https://cf-training-tracker.vercel.app",
