@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "img.atcoder.jp",
-    ],
     remotePatterns: [
       {
         protocol: 'https',
@@ -17,6 +14,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'd3moma7wl9.ufs.sh',
         pathname: '/f/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.atcoder.jp',
       },
     ],
   },

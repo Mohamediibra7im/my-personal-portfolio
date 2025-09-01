@@ -9,10 +9,22 @@ const educationList = [
     school: "Helwan National University",
     year: "September 2023 - Present",
     location: "Cairo, Egypt",
+    note: "Currently in my third year",
   },
 ]
 
 const experienceList = [
+  {
+    title: "Trainee - MEAN Stack Development Internship",
+    company: "Information Technology Institute (ITI)",
+    period: "August 2025 - Present",
+    location: "Cairo, Egypt (Remote)",
+    description: [
+      "Working with AngularJS, MongoDB, and other technologies",
+      "Remote internship focused on full-stack JavaScript development",
+      "Gaining experience in modern web application design and development",
+    ],
+  },
   {
     title: "Trainee - Full Stack .Net Web Development Internship",
     company: "Digital Egypt Pioneers Initiative (DEPI)",
@@ -25,7 +37,7 @@ const experienceList = [
     ],
   },
   {
-    title: "Trainee - Full Stack Development with Python",
+    title: "Trainee - Full Stack Development with Python and Django Internship",
     company: "Information Technology Institute (ITI)",
     period: "August 2024 - September 2024",
     location: "Cairo, Egypt (Remote)",
@@ -131,6 +143,13 @@ export default function Qualification() {
                     <span className="hidden sm:inline">|</span>
                     <span className="hidden sm:inline">{edu.location}</span>
                   </div>
+                  {edu.note && (
+                    <div className="inline-block mt-2">
+                      <span className="px-3 py-1 italic rounded-full bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 text-xs xs:text-sm font-semibold shadow-sm border border-blue-200 dark:border-blue-700">
+                        {edu.note}
+                      </span>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
