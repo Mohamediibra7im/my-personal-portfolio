@@ -10,6 +10,7 @@ interface Project {
   githubLink: string;
   technologies: string[];
   status: string;
+  users?: number;
 }
 
 export const projects: Project[] = [
@@ -29,6 +30,15 @@ export const projects: Project[] = [
     demoLink: "#",
     githubLink: "https://github.com/Collage-Management-System",
     technologies: ["C#", "ASP.NET Core", "Entity Framework", "SQL Server", "Next.js", "Tailwind CSS"],
+    status: "Completed",
+  },
+  {
+    name: "CP-Training Tracker",
+    description: "A Competitive Programming training tool to Master competitive programming with intelligent practice sessions, track your progress, and climb the Codeforces ladder. ",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFM2UvMh2JJPzYV5prtOjyasD6SmFHLKB18xcd0",
+    demoLink: "https://cf-training-tracker.vercel.app",
+    githubLink: "https://github.com/Mohamediibra7im/cf-training-tracker",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Vercel", "MongoDB", "Mongoose", "JWT", "bcryptjs"],
     status: "Completed",
   },
   {
@@ -111,11 +121,13 @@ export default function Projects() {
                 />
               </div>
               <div className="p-4 xs:p-5 sm:p-6 flex flex-col flex-1">
-                <h3 className="text-lg xs:text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
-                  {project.name}
-                </h3>
+                <div className="flex items-center gap-2 mb-2">
+                  <h3 className="text-lg xs:text-xl font-bold text-gray-900 dark:text-white group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors m-0">
+                    {project.name}
+                  </h3>
+                </div>
                 <p className="text-sm xs:text-base text-gray-600 dark:text-gray-300 mb-3 xs:mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-1.5 xs:gap-2 mb-3 xs:mb-4">
+                <div className="flex flex-wrap gap-1.5 xs:gap-2 mb-3 xs:mb-4 items-center">
                   {project.technologies.map((tech, i) => (
                     <span key={i} className="px-2 xs:px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-200 text-xs rounded-full">
                       {tech}
