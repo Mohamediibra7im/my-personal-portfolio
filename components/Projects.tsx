@@ -16,7 +16,7 @@ interface Project {
 export const projects: Project[] = [
   {
     name: "Personal Portfolio",
-    description: "A personal portfolio website showcasing my projects, skills, and experience. Built with Next.js and Tailwind CSS for a responsive design.",
+    description: "My Personal Portfolio website, designed to showcase my projects, skills, and experience. Built with modern web technologies, it offers a clean, responsive, and interactive user experience. ",
     image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMToAX6tHsIRJglXdvZDBSsVL8NptFnijwCbGu",
     demoLink: "https://mohamed-ibrahim-omar.vercel.app",
     githubLink: "https://github.com/Mohamediibra7im/new-port",
