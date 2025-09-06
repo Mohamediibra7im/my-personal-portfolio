@@ -35,7 +35,7 @@ export const projects: Project[] = [
   {
     name: "CF-Training Tracker",
     description: "A Competitive Programming training tool to Master competitive programming with intelligent practice sessions, track your progress, and climb the Codeforces ladder. ",
-    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFM2UvMh2JJPzYV5prtOjyasD6SmFHLKB18xcd0",
+    image: "https://d3moma7wl9.ufs.sh/f/xRZhVxWEJbFMus29DenxT5WwkRzQNM4V8v2dhSnslabDi1c0",
     demoLink: "https://cf-training-tracker.vercel.app",
     githubLink: "https://github.com/Mohamediibra7im/cf-training-tracker",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Vercel", "MongoDB", "Mongoose", "JWT", "bcryptjs"],
